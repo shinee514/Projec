@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rv">
+<insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="rv_id">
+    <![CDATA[
+    insert into rv
+    (rv_id, res_id, cust_id, rv_time, rv_cnt)
+    values
+    (#{rv_id}, #{res_id}, #{cust_id}, #{rv_time}, #{rv_cnt})
+    ]]>
+</insert>
+</mapper>
