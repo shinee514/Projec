@@ -19,4 +19,8 @@ public class MainController {
 	public ModelAndView Recommend() {
 	    return new ModelAndView("nowait/recommend");
 	}
+	@RequestMapping(value="/first", method = RequestMethod.GET)
+	public ModelAndView First() {
+	    return new ModelAndView("nowait/first");
+	}
 }
