@@ -47,7 +47,7 @@ img {
 </head>
 <body>
 <div class="a">
-<a href="/main" target="_self">
+<a href="/first" target="_self">
 <img class="mainlogo" src="${path}/resources/images/logo.png" width="400" height="250">
 </a>
 </div>
