@@ -9,4 +9,21 @@
     (#{cust_id}, #{cust_pw}, #{cust_name}, #{cust_addr}, #{cust_pn}, #{cust_email})
     ]]>
 </insert>
+
+<select id="select_mypage" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        cust_id,
+        cust_pw,
+        cust_name,
+        cust_addr,
+        cust_pn,
+        cust_email
+        from
+        cust
+        where
+        cust_id = #{custId}   
+    ]]>
+</select>
+
 </mapper>

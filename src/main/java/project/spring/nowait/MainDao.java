@@ -14,4 +14,9 @@ public class MainDao {
  public int insert(Map<String, Object> map) {
 	  return this.sqlSessionTemplate.insert("main.insert", map);
 	}
+ 
+ public Map<String, Object> selectMypage(Map<String, Object> map) {
+	    return this.sqlSessionTemplate.selectOne("cust.select_mypage", map);
+	}
+ 
 }
