@@ -154,7 +154,9 @@
 </div>
 <div id="wrap">
 <section>
-	<img class="a" src="${path}/resources/images/recommend/건강밥상심마니.png">
+	<a href="/detail?resId=20">
+		<img class="a" src="${path}/resources/images/recommend/gs.png">
+	</a>
 	<img class="a" src="${path}/resources/images/recommend/더식당.png">
 	<img class="a" src="${path}/resources/images/recommend/로니로티.png">
 </section>
