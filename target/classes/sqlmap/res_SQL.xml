@@ -9,4 +9,33 @@
     (#{res_id}, #{res_name}, #{res_kind}, #{res_addr})
     ]]>
 </insert>
+
+<select id="select_detail" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_name,
+        res_kind,
+        res_addr,
+        res_logo,
+        res_logo1,
+        res_logo2,
+        res_map,
+        res_menu
+        from
+        res
+        where
+        res_id = #{resId}   
+    ]]>
+</select>
+
+<select id="select_all" parameterType="hashMap" resultType="List">
+    <![CDATA[
+        select
+        res_logo
+        from
+        res
+    ]]>
+</select>
+
+
 </mapper>

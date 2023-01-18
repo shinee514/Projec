@@ -4,9 +4,11 @@ import java.util.Map;
 
 public interface MainService {
 	
-	String Main(Map<String, Object> map);
+	String login(Map<String, Object> map);
 
 	Map<String, Object> mypage(Map<String, Object> map);
+	
+	Map<String, Object> detail(Map<String, Object> map);
 	
 
 }

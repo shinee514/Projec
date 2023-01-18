@@ -11,10 +11,10 @@ public class MainServiceImpl implements MainService {
  MainDao mainDao;
  
  @Override
- public String Main(Map<String, Object> map) {
+ public String login(Map<String, Object> map) {
      int affectRowCount = this.mainDao.insert(map);
      if (affectRowCount ==  1) {
-         return map.get("main_id").toString();
+         return map.get("cust_id").toString();
      }
      return null;
 
@@ -23,6 +23,11 @@ public class MainServiceImpl implements MainService {
  @Override
  public Map<String, Object> mypage(Map<String, Object> map){
      return this.mainDao.selectMypage(map);
+ }
+ 
+ @Override
+ public Map<String, Object> detail(Map<String, Object> map){
+     return this.mainDao.selectDetail(map);
  }
 
 }

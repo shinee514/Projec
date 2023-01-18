@@ -6,7 +6,6 @@
  <body>
   <h1>책 생성하기</h1>
   <form method="POST">
-   <p>아이디 : <input type="text" name="cust_id" /></p>
    <p>비밀번호 : <input type="text" name="cust_pw" /></p>
    <p>이름 : <input type="text" name="cust_name" /></p>
    <p>주소 : <input type="text" name="cust_addr" /></p>

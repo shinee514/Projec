@@ -12,11 +12,15 @@ public class MainDao {
  SqlSessionTemplate sqlSessionTemplate;
  
  public int insert(Map<String, Object> map) {
-	  return this.sqlSessionTemplate.insert("main.insert", map);
+	  return this.sqlSessionTemplate.insert("cust.insert", map);
 	}
  
  public Map<String, Object> selectMypage(Map<String, Object> map) {
 	    return this.sqlSessionTemplate.selectOne("cust.select_mypage", map);
+	}
+ 
+ public Map<String, Object> selectDetail(Map<String, Object> map) {
+	    return this.sqlSessionTemplate.selectOne("res.select_detail", map);
 	}
  
 }
