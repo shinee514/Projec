@@ -32,6 +32,10 @@ MainService mainService;
 	public ModelAndView First() {
 	    return new ModelAndView("nowait/first");
 	}
+	@RequestMapping(value="/rev", method = RequestMethod.GET)
+	public ModelAndView Rev() {
+	    return new ModelAndView("nowait/rev");
+	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ModelAndView loginPost(@RequestParam Map<String, Object> map) {
