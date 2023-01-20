@@ -100,16 +100,17 @@ input{
 </header>
 	<nav>
 		<ul class="nav-1">
-			<li class="nav-item1"> <a href="">로그인</a></li>
+			<li class="nav-item1"> <a href="">Login</a></li>
 			<li class="nav-item1"> <a href="">My Page</a></li>
-			<li class="nav-item1"> <a href="">회원가입</a></li>
+			<li class="nav-item1"> <a href="">Join</a></li>
+			<li class="nav-item1"> <a href="">QnA</a></li>
 		</ul>
 	</nav>
 	<nav>
 		<ul class="nav-2">
-			<li class="nav-item2"> <a href="">원격 줄서기-예약</a></li>
-			<li class="nav-item2"> <a href="">주변맛집추천</a></li>
-			<li class="nav-item2"> <a href="">타임세일</a></li>
+			<li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
+			<li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
+			<li class="nav-item2"> <a href="/sale">타임세일</a></li>
 		</ul>
 	</nav>
 	<img class="reslogo" src="${path}/resources/images/${ data.res_logo }" width="400" height="250">
@@ -123,7 +124,7 @@ input{
 	<form action=''>
   <input type='button' 
          value="예약하기"
-         onclick= "location.href='/main'"/>
+         onclick= "location.href='/rv'"/>
 </form>
 	</section>
 		<h1>상세페이지</h1>

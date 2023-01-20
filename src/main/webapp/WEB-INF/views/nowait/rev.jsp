@@ -159,16 +159,17 @@ ul {
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="">로그인</a></li>
-					<li class="nav-item1"><a href="">My Page</a></li>
-					<li class="nav-item1"><a href="">회원가입</a></li>
+					<li class="nav-item1"> <a href="">Login</a></li>
+					<li class="nav-item1"> <a href="">My Page</a></li>
+					<li class="nav-item1"> <a href="">Join</a></li>
+					<li class="nav-item1"> <a href="">QnA</a></li>
 				</ul>
 			</nav>
 			<nav>
 				<ul class="nav-2">
-					<li class="nav-item2"><a href="">원격 줄서기/예약</a></li>
-					<li class="nav-item2"><a href="">주변맛집추천</a></li>
-					<li class="nav-item2"><a href="">타임세일</a></li>
+					<li class="nav-item2"><a href="/rev">원격 줄서기/예약</a></li>
+					<li class="nav-item2"><a href="/recommend">주변맛집추천</a></li>
+					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -187,42 +188,36 @@ ul {
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 								<li><a href="#" id="left1" class="lnb">호프 줄서기</a>
 									<ul class="depth2">
 										<li><a href="#">>강동</a></li>
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 								<li><a href="#" id="left2" class="lnb">한식 줄서기</a>
 									<ul class="depth2">
 										<li><a href="#">>강동</a></li>
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 								<li><a href="#" id="left3" class="lnb">양식 줄서기</a>
 									<ul class="depth2">
 										<li><a href="#">>강동</a></li>
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 								<li><a href="#" id="left4" class="lnb">일식 줄서기</a>
 									<ul class="depth2">
 										<li><a href="#">>강동</a></li>
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 								<li><a href="#" id="left5" class="lnb">중식 줄서기</a>
 									<ul class="depth2">
 										<li><a href="#">>강동</a></li>
 										<li><a href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
-								<p></p>
 							</ul>
 
 
@@ -311,6 +306,5 @@ var currentLeft;
 			2023</span>
 	</p>
 </footer>
-</div>
 </body>
 </html>

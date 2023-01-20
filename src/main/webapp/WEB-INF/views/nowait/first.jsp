@@ -11,7 +11,7 @@ body {
 }
 .mainlogo{
 	position : absolute;
-	left : 630px;
+	left : 730px;
 	top : 160px;
 }
 .waiting{
@@ -21,12 +21,12 @@ body {
 }
 .restaurant{
 	position : absolute;
-	left : 630px;
+	left : 730px;
 	top : 460px;
 }
 .timesale{
 	position : absolute;
-	left : 990px;
+	left : 1190px;
 	top : 460px;
 }
 .a img {
@@ -52,17 +52,17 @@ img {
 </a>
 </div>
 <div class="a">
-<a href="" target="_self">
+<a href="/rev" target="_self">
 <img class="waiting" src="${path}/resources/images/logo/waiting.png" width="400" height="250">
 </a>
 </div>
 <div class="a">
-<a href="" target="_self">
+<a href="/recommend" target="_self">
 <img class="restaurant" src="${path}/resources/images/logo/restaurant.png" width="400" height="250">
 </a>
 </div>
 <div class="a">
-<a href="" target="_self">
+<a href="/sale" target="_self">
 <img class="timesale" src="${path}/resources/images/logo/timesale.png" width="400" height="250">
 </a>
 </div>
