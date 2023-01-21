@@ -70,14 +70,14 @@ SignupService signService;
 	}
 		
 	@RequestMapping(value="/signup", method = RequestMethod.POST)
-	public ModelAndView signup1(@RequestParam Map<String, Object> map) {	
+	public ModelAndView signup1(@RequestParam Map<String, Object> map) {
 		 String custId = this.signService.signup(map);
 		 ModelAndView mav = new ModelAndView();
 		 if (custId == null) {
 		        mav.setViewName("redirect:/signup");
 		    }else {
-		        mav.setViewName("redirect:/nowait/login?custId=" + custId);
-		    }  
+		        mav.setViewName("redirect:/login?custId=" + custId);
+		    }
 
 		    return mav;
 	}

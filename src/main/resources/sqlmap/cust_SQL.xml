@@ -7,6 +7,7 @@
     (cust_id, cust_addr, cust_email, cust_name, cust_pn, cust_pw, cust_oaddr, cust_detailaddr, cust_birth)
     values
     (#{cust_id}, #{cust_addr}, #{cust_email}, #{cust_name}, #{cust_pn}, #{cust_pw}, #{cust_oaddr}, #{cust_detailaddr}, #{cust_birth})
+    ON DUPLICATE KEY UPDATE `cust_id`=VALUES(`cust_id`);
     ]]>
 </insert>
 
@@ -22,7 +23,7 @@
         from
         cust
         where
-        cust_id = #{custId}   
+        cust_id = #{custId}
     ]]>
 </select>
 

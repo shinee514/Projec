@@ -14,7 +14,7 @@ public class SignupServiceImpl implements SignupService {
    public String signup(Map<String, Object> map) {
        int affectRowCount = this.signupDao.insert(map);
        if (affectRowCount ==  1) {
-           return map.get("sign_id").toString();
+           return map.get("cust_id").toString();
        }
        return null;
 
