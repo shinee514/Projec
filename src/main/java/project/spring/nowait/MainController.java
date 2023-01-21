@@ -3,7 +3,6 @@ package project.spring.nowait;
 
 import java.util.Map;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +15,9 @@ public class MainController {
 
 @Autowired
 MainService mainService;
+@Autowired
+SignupService signService;
+
 
 	//@RequestMapping(value="/detail", method = RequestMethod.GET)
 	//public ModelAndView Detail() {
@@ -37,32 +39,17 @@ MainService mainService;
 	public ModelAndView Rev() {
 	    return new ModelAndView("nowait/rev");
 	}
-	
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public ModelAndView loginPost(@RequestParam Map<String, Object> map) {
-	    ModelAndView mav = new ModelAndView();
-
-	    String custId = this.mainService.login(map);
-	    if (custId == null) {
-	        mav.setViewName("redirect:/login");
-	    }else {
-	        mav.setViewName("redirect:/mypage?custId=" + custId); 
-	    }  
-
-	    return mav;
+	@RequestMapping(value="/rv", method = RequestMethod.GET)
+	public ModelAndView Rv() {
+	    return new ModelAndView("nowait/rv");
 	}
-	
-	
-	@RequestMapping(value = "/mypage", method = RequestMethod.GET)
-	public ModelAndView detail1(@RequestParam Map<String, Object> map) {
-	    Map<String, Object> mypageMap = this.mainService.mypage(map);
-
-	    ModelAndView mav = new ModelAndView();
-	    mav.addObject("data", mypageMap);
-	    String custId = map.get("custId").toString();
-	    mav.addObject("custId", custId);
-	    mav.setViewName("/nowait/mypage");
-	    return mav;
+	@RequestMapping(value="/rvcf", method = RequestMethod.GET)
+	public ModelAndView Rvcf() {
+	    return new ModelAndView("nowait/rvcf");
+	}
+	@RequestMapping(value="/sale", method = RequestMethod.GET)
+	public ModelAndView Sale() {
+	    return new ModelAndView("nowait/sale");
 	}
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
@@ -75,5 +62,28 @@ MainService mainService;
 	    mav.addObject("resId", resId);
 	    mav.setViewName("/nowait/detail");
 	    return mav;
+	}
+	
+	@RequestMapping(value="/signup", method = RequestMethod.GET)
+	public ModelAndView signup() {
+	    return new ModelAndView("nowait/signup");
+	}
+		
+	@RequestMapping(value="/signup", method = RequestMethod.POST)
+	public ModelAndView signup1(@RequestParam Map<String, Object> map) {	
+		 String custId = this.signService.signup(map);
+		 ModelAndView mav = new ModelAndView();
+		 if (custId == null) {
+		        mav.setViewName("redirect:/signup");
+		    }else {
+		        mav.setViewName("redirect:/nowait/login?custId=" + custId);
+		    }  
+
+		    return mav;
+	}
+	
+	@RequestMapping(value="/login", method = RequestMethod.GET)
+	public ModelAndView login() {
+	    return new ModelAndView("nowait/login");
 	}
 }

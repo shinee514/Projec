@@ -1,16 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>예약페이지</title>
-    </head>
+<head>
+<meta charset="UTF-8">
+<title>예약화면</title>
+<link href="${path}/resources/css/style.css" rel="stylesheet"/>
+<style>
+body {
+	margin:0;
+}
+
+#wrap {
+	min-height: 100vh;
+	porition: relative;
+	width: 100%;
+}
+
+footer {
+	width: 100%;
+	height: 0px;
+	bottom: -300px;
+	position: absolute;
+}
+
+section{
+	padding-bottom: -300px;
+	
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+</style>
+</head>
     <body>
-        <h3>RSERVATION</h3>
+<div id='wrap'>
+	<section>
+<header>
+<a href="/first"> 
+	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
+</a>
+</header>
+	<nav>
+		<ul class="nav-1">
+			<li class="nav-item1"> <a href="">Login</a></li>
+			<li class="nav-item1"> <a href="">My Page</a></li>
+			<li class="nav-item1"> <a href="">Join</a></li>
+			<li class="nav-item1"> <a href="">QnA</a></li>
+		</ul>
+	</nav>
+	<nav>
+		<ul class="nav-2">
+			<li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
+			<li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
+			<li class="nav-item2"> <a href="/sale">타임세일</a></li>
+		</ul>
+	</nav>
+	</section>
+
+        <h3>예약하기</h3>
         <form action="" method="post">
             <fieldset>
                 <legend>예약자 정보</legend>
                 <label for="sub">예약자:</label>
                 <input type="text" name="person" id="sub"/><br>
-                <label for="phone">휴대폰:</label>
+                <label for="phone">연락처:</label>
                 <input type="tel" name="tell" id="phone" placeholder="01*-000*-0000" pattern="(01[0-9]{1}-[0-9]{3,4}-[0-9]{4}"/><br>
                 예약인원:
                 <select name="person" id="person_cnt" size="1">
@@ -37,9 +93,22 @@
                 <input type="radio" name="op" id="choice" value="veg_cuisine"/>채식요리
             </fieldset>
             <br>
-            <input type="submit" value="예약">
+            <input type="button" value="예약" onclick="location.href='/rvcf'">
             <input type="reset" value="취소">
         </form>
 
+    <footer>
+		<hr width="100%">
+		<nav>
+			<a href="" target="_blank">Blog</a>
+			<a href="" target="_blank">Github</a>		
+		</nav>
+		<p>
+			<span>1</span><br/>
+			<span>2</span><br/>
+			<span>Copyright 2023</span>
+		</p>
+	</footer>
+	</div>
     </body>
 </html>

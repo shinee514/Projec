@@ -1,16 +1,19 @@
-create table cust(
-	cust_id varchar(20) primary key,
-    cust_pw varchar(20) not null,
-    cust_name varchar(20) not null,
-    cust_addr varchar(100) not null,
-    cust_pn varchar(25) not null,
-    cust_email varchar(100) not null
-)
+CREATE TABLE `cust` (
+  `cust_id` VARCHAR(30) PRIMARY KEY,
+  `cust_pw` VARCHAR(30) NOT NULL,
+  `cust_name` VARCHAR(20) NOT NULL,
+  `cust_birth` VARCHAR(20) NOT NULL,
+  `cust_email` VARCHAR(50) NOT NULL,
+  `cust_pn` VARCHAR(20) NOT NULL,
+  `cust_oaddr` VARCHAR(20) NOT NULL,
+  `cust_addr` VARCHAR(100) NOT NULL,
+  `cust_detailaddr` VARCHAR(45) NOT NULL
+  )
 COLLATE='utf8mb4_general_ci'
 ;
 
 create table res(
-	res_id varchar(20) primary key,
+	res_id varchar(20) PRIMARY KEY,
     res_name VARCHAR(20) NOT NULL,
     res_kind VARCHAR(10) NOT NULL,
     res_addr VARCHAR(50) NOT NULL,
@@ -27,7 +30,7 @@ COLLATE='utf8mb4_general_ci'
 create table rv(
 	rv_id varchar(20) primary key,
     res_id varchar(20) not null,
-    cust_id varchar(20) not null,
+    cust_id varchar(30) not null,
     rv_time varchar(10) not null,
     rv_cnt int(5) not null,
     foreign key (res_id) references res (res_id),

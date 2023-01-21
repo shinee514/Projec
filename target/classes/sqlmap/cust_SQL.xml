@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cust">
-<insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="cust_id">
+<insert id="insert" parameterType="hashMap">
     <![CDATA[
     insert into cust
-    (cust_id, cust_pw, cust_name, cust_addr, cust_pn, cust_email)
+    (cust_id, cust_addr, cust_email, cust_name, cust_pn, cust_pw, cust_oaddr, cust_detailaddr, cust_birth)
     values
-    (#{cust_id}, #{cust_pw}, #{cust_name}, #{cust_addr}, #{cust_pn}, #{cust_email})
+    (#{cust_id}, #{cust_addr}, #{cust_email}, #{cust_name}, #{cust_pn}, #{cust_pw}, #{cust_oaddr}, #{cust_detailaddr}, #{cust_birth})
     ]]>
 </insert>
 
