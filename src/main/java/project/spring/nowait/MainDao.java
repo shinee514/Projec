@@ -16,4 +16,12 @@ public class MainDao {
 	    return this.sqlSessionTemplate.selectOne("res.select_detail", map);
 	}
  
+ public Map<String, Object> selectRv(Map<String, Object> map) {
+	    return this.sqlSessionTemplate.selectOne("rv.select_rv", map);
+	}
+ 
+ public int insertRv(Map<String, Object> map) {
+	  return this.sqlSessionTemplate.insert("rv.insert", map);
+	}
+ 
 }

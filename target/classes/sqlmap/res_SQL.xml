@@ -28,14 +28,4 @@
     ]]>
 </select>
 
-<select id="select_all" parameterType="hashMap" resultType="List">
-    <![CDATA[
-        select
-        res_logo
-        from
-        res
-    ]]>
-</select>
-
-
 </mapper>

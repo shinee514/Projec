@@ -1,7 +1,7 @@
 CREATE TABLE `cust` (
   `cust_id` VARCHAR(30) PRIMARY KEY,
   `cust_pw` VARCHAR(30) NOT NULL,
-  `cust_name` VARCHAR(20) NOT NULL,
+  `cust_name` VARCHAR(20) UNIQUE KEY,
   `cust_birth` VARCHAR(20) NOT NULL,
   `cust_email` VARCHAR(50) NOT NULL,
   `cust_pn` VARCHAR(20) NOT NULL,
@@ -14,7 +14,7 @@ COLLATE='utf8mb4_general_ci'
 
 create table res(
 	res_id varchar(20) PRIMARY KEY,
-    res_name VARCHAR(20) NOT NULL,
+    res_name VARCHAR(20) UNIQUE KEY,
     res_kind VARCHAR(10) NOT NULL,
     res_addr VARCHAR(50) NOT NULL,
     res_logo VARCHAR(50) NOT NULL,
@@ -28,13 +28,13 @@ COLLATE='utf8mb4_general_ci'
 ;
 
 create table rv(
-	rv_id varchar(20) primary key,
-    res_id varchar(20) not null,
-    cust_id varchar(30) not null,
+	rv_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     rv_time varchar(10) not null,
     rv_cnt int(5) not null,
-    foreign key (res_id) references res (res_id),
-	foreign key (cust_id) references cust (cust_id)
+    res_name VARCHAR(20) NOT NULL,
+    cust_name VARCHAR(20) NOT NULL,
+    FOREIGN KEY (res_name) REFERENCES res (res_name),
+    FOREIGN KEY (cust_name) REFERENCES cust (cust_name)
 )
 COLLATE='utf8mb4_general_ci'
 ;
@@ -162,6 +162,6 @@ VALUES ('23', '미뜸 하남미사역점', '한식', '경기 하남시 미사강
   INSERT INTO res(res_id, res_name, res_kind, res_addr, res_logo, res_logo1, res_logo2, res_map, res_menu, res_first)
 VALUES ('24', '페어링하우스', '카페,디저트', '경기 하남시 미사강변중앙로 181 더퍼스트테라스 3층',
  'MS_ph/phlogo.png', 'MS_ph/ph1.png', 'MS_ph/ph2.png',
- 'MS_ph/phmap.png', 'MS_ph/phmenu.png', 'recommend/ph.png');
+ 'MS_ph/phmap.png', 'MS_ph/phmenu.png', 'recommend/ph.png');cust
 
 select res_logo from res;

@@ -43,17 +43,13 @@ SignupService signService;
 	public ModelAndView Rv() {
 	    return new ModelAndView("nowait/rv");
 	}
-	@RequestMapping(value="/rvcf", method = RequestMethod.GET)
-	public ModelAndView Rvcf() {
-	    return new ModelAndView("nowait/rvcf");
-	}
+	//@RequestMapping(value="/rvcf", method = RequestMethod.GET)
+	//public ModelAndView Rvcf() {
+	    //return new ModelAndView("nowait/rvcf");
+	//}
 	@RequestMapping(value="/sale", method = RequestMethod.GET)
 	public ModelAndView Sale() {
 	    return new ModelAndView("nowait/sale");
-	}
-	@RequestMapping(value="/rev123", method = RequestMethod.GET)
-	public ModelAndView Rev123() {
-	    return new ModelAndView("nowait/rev123");
 	}
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
@@ -65,6 +61,32 @@ SignupService signService;
 	    String resId = map.get("resId").toString();
 	    mav.addObject("resId", resId);
 	    mav.setViewName("/nowait/detail");
+	    return mav;
+	}
+	
+	@RequestMapping(value = "/rv", method = RequestMethod.POST)
+	public ModelAndView rvPost(@RequestParam Map<String, Object> map) {
+	    ModelAndView mav = new ModelAndView();
+
+	    String rvId = this.mainService.insertRv(map);
+	    if (rvId == null) {
+	        mav.setViewName("redirect:/rv");
+	    }else {
+	        mav.setViewName("redirect:/rvcf?rvId=" + rvId); 
+	    }  
+
+	    return mav;
+	}
+	
+	@RequestMapping(value = "/rvcf", method = RequestMethod.GET)
+	public ModelAndView rv(@RequestParam Map<String, Object> map) {
+	    Map<String, Object> rvMap = this.mainService.rv(map);
+
+	    ModelAndView mav = new ModelAndView();
+	    mav.addObject("rvData", rvMap);
+	    String rvId = map.get("rvId").toString();
+	    mav.addObject("rvId", rvId);
+	    mav.setViewName("/nowait/rvcf");
 	    return mav;
 	}
 	

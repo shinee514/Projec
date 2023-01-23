@@ -55,8 +55,8 @@ ul {
 								<li><a href="#" id="left0" class="lnb">인기 줄서기</a>
 									<ul class="depth2">
 
-										<li><a href="#">>강동</a></li>
-										<li><a href="#">>송파</a></li>
+										<li><a class="rev-gd" href="#">>강동</a></li>
+										<li><a class="rev-sp" href="#">>송파</a></li>
 										<li><a href="#">>하남</a></li>
 									</ul></li>
 								<li><a href="#" id="left1" class="lnb">호프 줄서기</a>
@@ -163,8 +163,19 @@ $("a.lnb").click(function() {
 });
 
 $(function(){
-	$(".depth2").click(function(){
-		location.href = "/login.jsp"
+	$(".rev-gd").click(function(){
+		location.href = "/login"
+	});
+});
+
+$(function(){
+	$(".rev-sp").click(function(){
+		location.href = "/sale"
+	});
+});
+$(function(){
+	$(".rev-hn").click(function(){
+		location.href = "/"
 	});
 });
 </script>

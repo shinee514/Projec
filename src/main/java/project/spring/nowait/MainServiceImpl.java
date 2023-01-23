@@ -15,5 +15,20 @@ public class MainServiceImpl implements MainService {
  public Map<String, Object> detail(Map<String, Object> map){
      return this.mainDao.selectDetail(map);
  }
+ 
+ @Override
+ public Map<String, Object> rv(Map<String, Object> map){
+     return this.mainDao.selectRv(map);
+ }
+ 
+ @Override
+ public String insertRv(Map<String, Object> map) {
+     int affectRowCount = this.mainDao.insertRv(map);
+     if (affectRowCount ==  1) {
+         return map.get("rv_id").toString();
+     }
+     return null;
+
+ }
 
 }

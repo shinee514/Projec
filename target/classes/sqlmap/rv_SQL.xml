@@ -4,9 +4,25 @@
 <insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="rv_id">
     <![CDATA[
     insert into rv
-    (rv_id, res_id, cust_id, rv_time, rv_cnt)
+    (res_name, cust_name, rv_time, rv_cnt)
     values
-    (#{rv_id}, #{res_id}, #{cust_id}, #{rv_time}, #{rv_cnt})
+    (#{res_name}, #{cust_name}, #{rv_time}, #{rv_cnt})
     ]]>
 </insert>
+
+<select id="select_rv" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        rv_id,
+        res_name,
+        cust_name,
+        rv_time,
+        rv_cnt
+        from
+        rv
+        where
+        rv_id = #{rvId}   
+    ]]>
+</select>
+
 </mapper>

@@ -33,41 +33,13 @@
 	</section>
 
         <h3>예약하기</h3>
-        <form action="" method="post">
-            <fieldset>
-                <legend>예약자 정보</legend>
-                <label for="sub">예약자:</label>
-                <input type="text" name="person" id="sub"/><br>
-                <label for="phone">연락처:</label>
-                <input type="tel" name="tell" id="phone" placeholder="01*-000*-0000" pattern="(01[0-9]{1}-[0-9]{3,4}-[0-9]{4}"/><br>
-                예약인원:
-                <select name="person" id="person_cnt" size="1">
-                    <option value="">2명</option>
-                    <option value="">3명</option>
-                    <option value="">4명</option>
-                    <option value="">5명</option>
-                    <option value="">6명</option>
-                    <option value="">기타..</option>
-                </select>
-            </fieldset>
-            
-            <fieldset>
-                <legend>일자 및 시간 선택</legend>
-                <input type="date" name="reservation_date">
-                <input type="time" name="reservation_time"><br>
-                <label for="position">위치:</label>
-                <input type="radio" name="site" value="yes"/>본관
-                <input type="radio" name="site" value="yes"/>별관<br>
-
-                <label for="choice">옵션:</label>
-                <input type="radio" name="op" id="choice" value="sep_room"/>단독룸
-                <input type="radio" name="op" id="choice" value="baby_chair"/>아기의자
-                <input type="radio" name="op" id="choice" value="veg_cuisine"/>채식요리
-            </fieldset>
-            <br>
-            <input type="button" value="예약" onclick="location.href='/rvcf'">
-            <input type="reset" value="취소">
-        </form>
+          <form method="POST">
+   <p>예약식당 : <input type="text" name="res_name" /></p>
+   <p>예약자 성함 : <input type="text" name="cust_name" /></p>
+   <p>예약시간 : <input type="text" name="rv_time" /></p>
+   <p>예약 인원수 : <input type="text" name="rv_cnt" /></p>
+   <p><input type="submit" value="저장" />
+  </form>
 
     <footer id='mainfooter'>
 		<hr width="100%">
