@@ -38,7 +38,7 @@
    <p>예약자 성함 : <input type="text" name="cust_name" /></p>
    <p>예약시간 : <input type="text" name="rv_time" /></p>
    <p>예약 인원수 : <input type="text" name="rv_cnt" /></p>
-   <p><input type="submit" value="저장" />
+   <p><input type="submit" value="예약하기" />
   </form>
 
     <footer id='mainfooter'>
