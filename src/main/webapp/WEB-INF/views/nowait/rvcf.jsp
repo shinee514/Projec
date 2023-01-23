@@ -9,7 +9,7 @@
 </head>
 <body id='mainbody'>
 <div id='mainwrap'>
-	<section id='mainwrap'>
+	<section id='mainsection'>
 <header>
 <a href="/first"> 
 	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">

@@ -51,6 +51,10 @@ SignupService signService;
 	public ModelAndView Sale() {
 	    return new ModelAndView("nowait/sale");
 	}
+	@RequestMapping(value="/rev123", method = RequestMethod.GET)
+	public ModelAndView Rev123() {
+	    return new ModelAndView("nowait/rev123");
+	}
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {

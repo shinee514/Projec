@@ -128,44 +128,45 @@ ul {
 		</div>
 </body>
 <script>
-var state= "off";
-contentbox.onclick = function(){
-	   if()
-}
-
 var currentLeft;
-   var prevLeft;
-   $("ul.depth2").hide();
+var prevLeft;
+$("ul.depth2").hide();
 
-   lnb("left0");
-   function lnb(str) {
-      currentLeft = $("#" + str);
-      prevLeft = currentLeft;
-      currentLeft.addClass("on");
-      currentLeft.next(".depth2").slideDown("fast");
-   }
-   $("a.lnb").click(function() {
-      if ($(this).hasClass("on") == false) {
-         $("a.lnb").each(function() {
-            if ($(this).hasClass("on")) {
-               $(this).removeClass("on");
-               //전체의 "lnb"클래스에서 "on"클래스가 삭제됩니다.
-               //"on" 클래스가 추가되면 활성화된 1 Depth로 지정됩니다.
-               $(this).next(".depth2").slideUp("fast");
-               //전체의 2 Depth에 해당하는 <ul>태그가 닫힙니다.
-            }
-         });
+lnb("left0");
+function lnb(str) {
+	currentLeft = $("#" + str);
+	prevLeft = currentLeft;
+	currentLeft.addClass("on");
+	currentLeft.next(".depth2").slideDown("fast");
+}
+$("a.lnb").click(function() {
+	if ($(this).hasClass("on") == false) {
+		$("a.lnb").each(function() {
+			if ($(this).hasClass("on")) {
+				$(this).removeClass("on");
+				//전체의 "lnb"클래스에서 "on"클래스가 삭제됩니다.
+				//"on" 클래스가 추가되면 활성화된 1 Depth로 지정됩니다.
+				$(this).next(".depth2").slideUp("fast");
+				//전체의 2 Depth에 해당하는 <ul>태그가 닫힙니다.
+			}
+		});
 
-         $(this).addClass("on"); // 클릭된 메뉴를 활성화시킵니다.
-         $(this).next(".depth2").slideDown("fast");
-         //클릭된 메뉴의 서브 메뉴가 열립니다. $(this).next().slideDown("fast");
-      } else {
-         //console.log ("현재 활성화 중입니다.")
-         $(this).removeClass("on");
-         $(this).next(".depth2").slideUp("fast");
-      }
-   });
-  
+		$(this).addClass("on"); // 클릭된 메뉴를 활성화시킵니다.
+		$(this).next(".depth2").slideDown("fast");
+		//클릭된 메뉴의 서브 메뉴가 열립니다. $(this).next().slideDown("fast");
+	} else {
+		//console.log ("현재 활성화 중입니다.")
+		$(this).removeClass("on");
+		$(this).next(".depth2").slideUp("fast");
+	}
+	
+});
+
+$(function(){
+	$(".depth2").click(function(){
+		location.href = "/login.jsp"
+	});
+});
 </script>
 <footer id="mainfooter">
 	<hr width="100%">
