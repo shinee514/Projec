@@ -40,3 +40,281 @@
 	text-decoration: none;
 	color : black;
 }
+#menu2 a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.M01 {
+	margin-left: 20px;
+	width: 100px;
+	background: #000;
+}
+.M01>li, .M02>li {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #1c1c1c;
+	text-align: center;
+	line-height: 50px;
+}
+.M01>li a:hover {
+	display: block;
+	background: #585858;
+	text-decoration: none;
+}
+.M02 {
+	width: 100px;
+	background: #585858;
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+.M02>li a:hover {
+	display: block;
+	background: #585858;
+	text-decoration: none;
+}
+.M01>li:hover .M02{
+	left: 100px;
+}
+#wrap{
+	display: flex;
+	position: absolute;
+	top: 30%
+}
+.a{
+	width: 300px;
+	height: 250px;
+	margin-left: 320px;
+	display: flex;
+	margin-bottom: 40px;
+	top: 30%;
+	
+}
+.b, .c, .d {
+	width: 300px;
+	height: 250px;
+	display: flex;
+	margin-left: 60px;
+	margin-bottom: 40px;
+	top: 30%;
+}
+#mainwrap {
+	min-height: 100vh;
+	porition: relative;
+	width: 100%;
+}
+
+#mainfooter {
+	width: 100%;
+	height: 0px;
+	bottom: -300px;
+	position: absolute;
+}
+
+#mainsection {
+	padding-bottom: -300px;
+}
+
+#mainhtml, #mainbody {
+	margin: 0;
+	padding: 0;
+}
+
+
+#all2 {
+	width: 1015px;
+}
+
+#all2>div {
+	float: left;
+}
+
+#left {
+	position: absolute;
+	width: 280px;
+}
+
+#leftmenu {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 215px;
+	background: url(images/menu-line.gif) repeat-x center;
+}
+
+#leftmenu #title {
+	height: 41px;
+	line-height: 45px;
+	text-indent: 16px;
+	font-size: 14px;
+	font-weight: 900;
+	background-color: #fcd7d7;
+	border: 1px solid #f89a9a;
+	border-top: 3px solid #ff0000;
+}
+
+#submenu>ul>li>a {
+	display: block;
+	height: 33px;
+	line-height: 38px;
+	text-indent: 28px;
+	font-size: 20px;
+	font-weight: 500;
+	background: url(images/sub_line.gif) no-repeat bottom;
+	border-left: 1px solid #f89a9a;
+	border-right: 1px solid #f89a9a;
+	cursor: pointer;
+}
+
+#submenu>ul>li>a:hover, #submenu>ul>li>a.on {
+	line-height: 36px;
+	text-indent: 19px;
+	font-weight: 900;
+	background-color: #fcd7d7;
+	background: url(imimages/arrow_select.gif) no-repeat 190px;
+	color: #f89a9a;
+	border: none;
+}
+
+.depth2 {
+	display: block;
+	background: url(images/sub_line_edge.gif) no-repeat bottom;
+}
+
+.depth2>li>a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 45px;
+	border-left: 1px solid #f89a9a;
+	border-right: 1px solid #f89a9a;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.depth2>li>a:hover, .depth2>li>a.on {
+	color: #f89a9a;
+}
+
+.kangdong {
+	width: 100%;
+	margin-left: 1000px;
+	display: none;
+}
+
+.contentbox {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 600px;
+}
+
+.contentbox .contentimg {
+	width: 48%;
+	margin-bottom: 20px;
+}
+
+.contentbox .contentimg .boximg {
+	width: 300px;
+	height: 300px;
+}
+
+.contentbox .contentimg .boximg img {
+	width: 100%;
+	height: 100%;
+}
+
+.text1{
+	position: absolute;
+    left: 300px;
+    top: 660px;
+}
+
+.text2{
+	position: absolute;
+    left: 300px;
+    top: 680px;
+}
+
+.text3{
+	position: absolute;
+    left: 300px;
+    top: 700px;
+}
+
+.reslogo{
+	position : absolute;
+	left : 300px;
+	top : 400px;
+}
+
+.res1{
+    position : absolute;
+	left : 710px;
+	top : 400px;
+}
+
+.res2{
+	position : absolute;
+	left : 710px;
+	top : 530px;
+}
+
+.resmap{
+	position : absolute;
+	left : 300px;
+	top : 800px;
+}
+
+.resmenu{
+	position : absolute;
+	left : 1000px;
+	top : 400px;
+}
+#detailinput{
+	position: absolute;
+    left: 1100px;
+    top: 1100px;
+}
+
+#firstbody {
+	background:#000000;
+}
+.mainlogo{
+	position : absolute;
+	left : 730px;
+	top : 160px;
+	max-width: 100%;
+}
+.waiting{
+	position : absolute;
+	left : 270px;
+	top : 460px;
+	max-width: 100%;
+}
+.restaurant{
+	position : absolute;
+	left : 730px;
+	top : 460px;
+	max-width: 100%;
+}
+.timesale{
+	position : absolute;
+	left : 1190px;
+	top : 460px;
+	max-width: 100%;
+}
+.f-a {
+  width: 400px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.first-a #firstimg {
+  transition: all 0.2s linear;
+}
+.first-a:hover #firstimg {
+  transform: scale(1.4);
+}

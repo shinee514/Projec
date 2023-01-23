@@ -7,10 +7,6 @@
 <title>메인화면</title>
 <link href="${path}/resources/css/style.css" rel="stylesheet"/>
 <style>
-body {
-	margin:0;
-}
-
 #wrap {
 	min-height: 100vh;
 	porition: relative;

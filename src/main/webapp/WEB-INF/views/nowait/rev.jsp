@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html id="mainhtml">
 <head>
 <meta charset="UTF-8">
 <title>메인화면</title>
@@ -10,32 +10,6 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript"></script>
 <style>
-body {
-	margin: 0;
-}
-
-#wrap {
-	min-height: 100vh;
-	porition: relative;
-	width: 100%;
-}
-
-footer {
-	width: 100%;
-	height: 0px;
-	bottom: -300px;
-	position: absolute;
-}
-
-section {
-	padding-bottom: -300px;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-}
-
 a {
 	text-decoration: none;
 	color: #000;
@@ -44,114 +18,11 @@ a {
 ul {
 	list-style: none;
 }
-
-#all2 {
-	width: 1015px;
-}
-
-#all2>div {
-	float: left;
-}
-
-#left {
-	position: absolute;
-	width: 280px;
-}
-
-#leftmenu {
-	margin: 0 auto;
-	margin-top: 20px;
-	width: 215px;
-	background: url(images/menu-line.gif) repeat-x center;
-}
-
-#leftmenu #title {
-	height: 41px;
-	line-height: 45px;
-	text-indent: 16px;
-	font-size: 14px;
-	font-weight: 900;
-	background-color: #fcd7d7;
-	border: 1px solid #f89a9a;
-	border-top: 3px solid #ff0000;
-}
-
-#submenu>ul>li>a {
-	display: block;
-	height: 33px;
-	line-height: 38px;
-	text-indent: 28px;
-	font-size: 20px;
-	font-weight: 500;
-	background: url(images/sub_line.gif) no-repeat bottom;
-	border-left: 1px solid #f89a9a;
-	border-right: 1px solid #f89a9a;
-	cursor: pointer;
-}
-
-#submenu>ul>li>a:hover, #submenu>ul>li>a.on {
-	line-height: 36px;
-	text-indent: 19px;
-	font-weight: 900;
-	background-color: #fcd7d7;
-	background: url(imimages/arrow_select.gif) no-repeat 190px;
-	color: #f89a9a;
-	border: none;
-}
-
-.depth2 {
-	display: block;
-	background: url(images/sub_line_edge.gif) no-repeat bottom;
-}
-
-.depth2>li>a {
-	display: block;
-	height: 40px;
-	line-height: 40px;
-	text-indent: 45px;
-	border-left: 1px solid #f89a9a;
-	border-right: 1px solid #f89a9a;
-	cursor: pointer;
-	font-size: 14px;
-}
-
-.depth2>li>a:hover, .depth2>li>a.on {
-	color: #f89a9a;
-}
-
-.kangdong {
-	width: 100%;
-	margin-left: 1000px;
-	display: none;
-}
-
-.contentbox {
-	width: 60%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 600px;
-}
-
-.contentbox .contentimg {
-	width: 48%;
-	margin-bottom: 20px;
-}
-
-.contentbox .contentimg .boximg {
-	width: 300px;
-	height: 300px;
-}
-
-.contentbox .contentimg .boximg img {
-	width: 100%;
-	height: 100%;
-}
 </style>
 </head>
-<body>
-	<div id="wrap">
-		<section>
+<body id="mainbody">
+	<div id="mainwrap">
+		<section id="mainsection">
 			<header>
 				<a href="/main"> <img src="${path}/resources/images/logo.png"
 					alt="My Image" width="200" height="150">
@@ -296,7 +167,7 @@ var currentLeft;
    });
   
 </script>
-<footer>
+<footer id="mainfooter">
 	<hr width="100%">
 	<nav>
 		<a href="" target="_blank">Blog</a> <a href="" target="_blank">Github</a>

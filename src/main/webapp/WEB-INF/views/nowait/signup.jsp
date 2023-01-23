@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html id='mainhtml'>
 <head>
     <meta charset="UTF-8">
     <title>회원가입</title>
@@ -349,38 +349,10 @@ function execPostCode() {
 
 </script>
 <link href="${path}/resources/css/style.css" rel="stylesheet"/>
- <style>
-body {
-	margin:0;
-}
-
-#wrap {
-	min-height: 100vh;
-	porition: relative;
-	width: 100%;
-}
-
-footer {
-	width: 100%;
-	height: 0px;
-	bottom: -300px;
-	position: absolute;
-}
-
-section{
-	padding-bottom: -300px;
-	
-}
-
-html, body{
-	margin: 0;
-	padding: 0;
-}
-</style> 
 </head>
-<body>
-<div id='wrap'>
-	<section>
+<body id='mainbody'>
+<div id='mainwrap'>
+	<section id='mainsection'>
 <header>
 <a href="/first"> 
 	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
@@ -402,20 +374,8 @@ html, body{
 		</ul>
 	</nav>
 	</section>
-	<footer>
-		<hr width="100%">
-		<nav>
-			<a href="" target="_blank">Blog</a>
-			<a href="" target="_blank">Github</a>		
-		</nav>
-		<p>
-			<span>1</span><br/>
-			<span>2</span><br/>
-			<span>Copyright 2023</span>
-		</p>
-	</footer>
-	</div>
-   <article class="container">
+	
+	   <article class="container">
             <div class="page-header">
                 <div class="col-6 text-center">
                 <h3>회원가입</h3>
@@ -489,5 +449,19 @@ html, body{
                 </form>
             </div>
         </article>
+	
+	<footer id='mainfooter'>
+		<hr width="100%">
+		<nav>
+			<a href="" target="_blank">Blog</a>
+			<a href="" target="_blank">Github</a>		
+		</nav>
+		<p>
+			<span>1</span><br/>
+			<span>2</span><br/>
+			<span>Copyright 2023</span>
+		</p>
+	</footer>
+	</div>
 </body>
 </html>
