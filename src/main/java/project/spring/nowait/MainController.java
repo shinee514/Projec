@@ -51,6 +51,78 @@ SignupService signService;
 	public ModelAndView Sale() {
 	    return new ModelAndView("nowait/sale");
 	}
+	@RequestMapping(value="/popgd", method = RequestMethod.GET)
+	public ModelAndView Popgd() {
+	    return new ModelAndView("nowait/rev/popgd");
+	}
+	@RequestMapping(value="/popsp", method = RequestMethod.GET)
+	public ModelAndView Popsp() {
+	    return new ModelAndView("nowait/rev/popsp");
+	}
+	@RequestMapping(value="/pophn", method = RequestMethod.GET)
+	public ModelAndView Pophn() {
+	    return new ModelAndView("nowait/rev/pophn");
+	}
+	@RequestMapping(value="/hofgd", method = RequestMethod.GET)
+	public ModelAndView Hofgd() {
+	    return new ModelAndView("nowait/rev/hofgd");
+	}
+	@RequestMapping(value="/hofsp", method = RequestMethod.GET)
+	public ModelAndView Hofsp() {
+	    return new ModelAndView("nowait/rev/hofsp");
+	}
+	@RequestMapping(value="/hofhn", method = RequestMethod.GET)
+	public ModelAndView Hofhn() {
+	    return new ModelAndView("nowait/rev/hofhn");
+	}
+	@RequestMapping(value="/korgd", method = RequestMethod.GET)
+	public ModelAndView Korgd() {
+	    return new ModelAndView("nowait/rev/korgd");
+	}
+	@RequestMapping(value="/korsp", method = RequestMethod.GET)
+	public ModelAndView Korsp() {
+	    return new ModelAndView("nowait/rev/korsp");
+	}
+	@RequestMapping(value="/korhn", method = RequestMethod.GET)
+	public ModelAndView Korhn() {
+	    return new ModelAndView("nowait/rev/korhn");
+	}
+	@RequestMapping(value="/usagd", method = RequestMethod.GET)
+	public ModelAndView Usagd() {
+	    return new ModelAndView("nowait/rev/usagd");
+	}
+	@RequestMapping(value="/usasp", method = RequestMethod.GET)
+	public ModelAndView Usasp() {
+	    return new ModelAndView("nowait/rev/usasp");
+	}
+	@RequestMapping(value="/usahn", method = RequestMethod.GET)
+	public ModelAndView Usahn() {
+	    return new ModelAndView("nowait/rev/usahn");
+	}
+	@RequestMapping(value="/jpgd", method = RequestMethod.GET)
+	public ModelAndView Jpgd() {
+	    return new ModelAndView("nowait/rev/jpgd");
+	}
+	@RequestMapping(value="/jpsp", method = RequestMethod.GET)
+	public ModelAndView Jpsp() {
+	    return new ModelAndView("nowait/rev/jpsp");
+	}
+	@RequestMapping(value="/jphn", method = RequestMethod.GET)
+	public ModelAndView Jphn() {
+	    return new ModelAndView("nowait/rev/jphn");
+	}
+	@RequestMapping(value="/chgd", method = RequestMethod.GET)
+	public ModelAndView Chgd() {
+	    return new ModelAndView("nowait/rev/chgd");
+	}
+	@RequestMapping(value="/chsp", method = RequestMethod.GET)
+	public ModelAndView Chsp() {
+	    return new ModelAndView("nowait/rev/chsp");
+	}
+	@RequestMapping(value="/chhn", method = RequestMethod.GET)
+	public ModelAndView Chhn() {
+	    return new ModelAndView("nowait/rev/chhn");
+	}
 	
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {

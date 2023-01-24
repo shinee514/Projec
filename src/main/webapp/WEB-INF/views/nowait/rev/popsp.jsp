@@ -99,34 +99,33 @@ ul {
 				</div>
 
 			</div>
-			
 			<ul class="contentbox">
- 			
+
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/cj.png">
+						<a href="/detail?resId=11"> <img id="misa don"
+							src="./resources/images/recommend/ds.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
+						<a href="/detail?resId=15"> <img id="misa don"
+							src="./resources/images/recommend/sf.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=8"> <img id="misa don"
-							src="./resources/images/recommend/yp.png">
+						<a href="/detail?resId=9"> <img id="misa don"
+							src="./resources/images/recommend/bj.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=7"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
+						<a href="/detail?resId=10"> <img id="misa don"
+							src="./resources/images/recommend/ct.png">
 						</a>
 					</div>
 				</li>

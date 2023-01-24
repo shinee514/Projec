@@ -99,27 +99,26 @@ ul {
 				</div>
 
 			</div>
-			
 			<ul class="contentbox">
- 			
+
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=3"> <img id="misa don"
+							src="./resources/images/recommend/ll.png">
+						</a>
+					</div>
+				</li>
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=6"> <img id="misa don"
+							src="./resources/images/recommend/tsd.png">
+						</a>
+					</div>
+				</li>
 				<li class="contentimg">
 					<div class="boximg">
 						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/cj.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=8"> <img id="misa don"
-							src="./resources/images/recommend/yp.png">
+							src="./resources/images/recommend/yk.png">
 						</a>
 					</div>
 				</li>
@@ -139,7 +138,7 @@ ul {
 	var currentLeft;
 	var prevLeft;
 	$("ul.depth2").hide();
-	lnb("left0");
+	lnb("left3");
 	function lnb(str) {
 		currentLeft = $("#" + str);
 		prevLeft = currentLeft;

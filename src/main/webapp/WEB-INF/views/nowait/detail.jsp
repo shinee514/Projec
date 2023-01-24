@@ -41,7 +41,7 @@
 	<p class="text3">${ data.res_addr }</p>
 	<form action=''>
   <input id="detailinput" type='button' 
-         value="예약하기"
+         value="예약페이지로"
          onclick= "location.href='/rv'"/>
 </form>
 	</section>

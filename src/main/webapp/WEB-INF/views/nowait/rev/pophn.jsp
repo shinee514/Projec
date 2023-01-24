@@ -99,34 +99,33 @@ ul {
 				</div>
 
 			</div>
-			
 			<ul class="contentbox">
- 			
+
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/cj.png">
+						<a href="/detail?resId=18"> <img id="misa don"
+							src="./resources/images/recommend/gj.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
+						<a href="/detail?resId=17"> <img id="misa don"
+							src="./resources/images/recommend/bc.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=8"> <img id="misa don"
-							src="./resources/images/recommend/yp.png">
+						<a href="/detail?resId=23"> <img id="misa don"
+							src="./resources/images/recommend/mt.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=7"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
+						<a href="/detail?resId=22"> <img id="misa don"
+							src="./resources/images/recommend/kk.png">
 						</a>
 					</div>
 				</li>
@@ -234,33 +233,33 @@ ul {
 	/*일식 줄서기*/
 	$(function() {
 		$(".jp-gd").click(function() {
-			location.href = "/jpgd"
+			location.href = "/popgd"
 		});
 	});
 	$(function() {
 		$(".jp-sp").click(function() {
-			location.href = "/jpsp"
+			location.href = "/hofsp"
 		});
 	});
 	$(function() {
 		$(".jp-hn").click(function() {
-			location.href = "/jphn"
+			location.href = "/hofhn"
 		});
 	});
 	/*중식 줄서기*/
 	$(function() {
 		$(".ch-gd").click(function() {
-			location.href = "/chgd"
+			location.href = "/popgd"
 		});
 	});
 	$(function() {
 		$(".ch-sp").click(function() {
-			location.href = "/chsp"
+			location.href = "/hofsp"
 		});
 	});
 	$(function() {
 		$(".ch-hn").click(function() {
-			location.href = "/chhn"
+			location.href = "/hofhn"
 		});
 	});
 </script>
