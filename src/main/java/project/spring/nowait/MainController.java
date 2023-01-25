@@ -123,7 +123,7 @@ SignupService signService;
 	public ModelAndView Chhn() {
 	    return new ModelAndView("nowait/rev/chhn");
 	}
-	
+
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {
 	    Map<String, Object> detailMap = this.mainService.detail(map);

@@ -36,8 +36,9 @@
 	예약번호 : ${ rvData.rv_id }<br>
 	예약자 성함 : ${ rvData.cust_name }<br>
 	예약 식당 : ${ rvData.res_name }<br>
+	예약 날짜 : ${ rvData.rv_date }<br>
 	예약 시간 : ${ rvData.rv_time }<br>
-	예약 인원수 : ${ rvData.rv_cnt }명<br>
+	예약 인원수 : ${ rvData.rv_cnt }<br>
 	
 	
 	

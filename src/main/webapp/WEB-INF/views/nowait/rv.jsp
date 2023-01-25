@@ -36,8 +36,16 @@
           <form method="POST">
    <p>예약식당 : <input type="text" name="res_name" /></p>
    <p>예약자 성함 : <input type="text" name="cust_name" /></p>
-   <p>예약시간 : <input type="text" name="rv_time" /></p>
-   <p>예약 인원수 : <input type="text" name="rv_cnt" /></p>
+   <p>예약날짜 : <input type="date" name="rv_date" /></p>
+   <p>예약시간 : <input type="time" name="rv_time" /></p>
+   <p>예약 인원수 : <select name="rv_cnt" size="1">
+                    <option value="2명">2명</option>
+                    <option value="3명">3명</option>
+                    <option value="4명">4명</option>
+                    <option value="5명">5명</option>
+                    <option value="6명">6명</option>
+                    <option value="단체">단체</option>
+                </select></p>
    <p><input type="submit" value="예약하기" />
   </form>
 

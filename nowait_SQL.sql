@@ -29,8 +29,9 @@ COLLATE='utf8mb4_general_ci'
 
 create table rv(
 	rv_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    rv_time varchar(10) not null,
-    rv_cnt int(5) not null,
+    rv_date VARCHAR(20) NOT NULL,
+    rv_time varchar(20) not null,
+    rv_cnt VARCHAR(20) not null,
     res_name VARCHAR(20) NOT NULL,
     cust_name VARCHAR(20) NOT NULL,
     FOREIGN KEY (res_name) REFERENCES res (res_name),
@@ -162,6 +163,6 @@ VALUES ('23', '미뜸 하남미사역점', '한식', '경기 하남시 미사강
   INSERT INTO res(res_id, res_name, res_kind, res_addr, res_logo, res_logo1, res_logo2, res_map, res_menu, res_first)
 VALUES ('24', '페어링하우스', '카페,디저트', '경기 하남시 미사강변중앙로 181 더퍼스트테라스 3층',
  'MS_ph/phlogo.png', 'MS_ph/ph1.png', 'MS_ph/ph2.png',
- 'MS_ph/phmap.png', 'MS_ph/phmenu.png', 'recommend/ph.png');cust
+ 'MS_ph/phmap.png', 'MS_ph/phmenu.png', 'recommend/ph.png');
 
 select res_logo from res;
