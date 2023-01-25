@@ -355,7 +355,7 @@ function execPostCode() {
 	<section id='mainsection'>
 <header>
 <a href="/first"> 
-	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
+	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
 </a>
 </header>
 	<nav>
@@ -368,7 +368,7 @@ function execPostCode() {
 	</nav>
 	<nav>
 		<ul class="nav-2">
-			<li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
+			<li class="nav-item2"> <a href="/rev">원격 줄서기/예약</a></li>
 			<li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
 			<li class="nav-item2"> <a href="/sale">타임세일</a></li>
 		</ul>
