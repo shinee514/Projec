@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -138,7 +139,7 @@ SignupService signService;
 	
 	@RequestMapping(value = "/rv", method = RequestMethod.POST)
 	public ModelAndView rvPost(@RequestParam Map<String, Object> map) {
-	    ModelAndView mav = new ModelAndView();
+		ModelAndView mav = new ModelAndView();
 
 	    String rvId = this.mainService.insertRv(map);
 	    if (rvId == null) {
@@ -146,7 +147,6 @@ SignupService signService;
 	    }else {
 	        mav.setViewName("redirect:/rvcf?rvId=" + rvId); 
 	    }  
-
 	    return mav;
 	}
 	

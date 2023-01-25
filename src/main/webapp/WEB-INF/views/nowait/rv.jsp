@@ -34,7 +34,8 @@
 
         <h3>예약하기</h3>
           <form method="POST">
-   <p>예약식당 : <input type="text" name="res_name" /></p>
+   <p>예약식당 : <input type="text" name="res_name" value="${ res_name }" /></p>
+   ${ res_name }
    <p>예약자 성함 : <input type="text" name="cust_name" /></p>
    <p>예약날짜 : <input type="date" name="rv_date" /></p>
    <p>예약시간 : <input type="time" name="rv_time" /></p>
@@ -53,7 +54,7 @@
 		<hr width="100%">
 		<nav>
 			<a href="" target="_blank">Blog</a>
-			<a href="" target="_blank">Github</a>		
+			<a href="" target="_blank">Github</a>
 		</nav>
 		<p>
 			<span>1</span><br/>
