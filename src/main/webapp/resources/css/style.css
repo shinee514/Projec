@@ -42,62 +42,7 @@
    color : black;
    font-family: fantasy;
 }
-#menu2 a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-}
-.M01 {
-	margin-left: 20px;
-	width: 100px;
-	background: #000;
-}
-.M01>li, .M02>li {
-	position: relative;
-	width: 100%;
-	height: 50px;
-	background: #1c1c1c;
-	text-align: center;
-	line-height: 50px;
-}
-.M01>li a:hover {
-	display: block;
-	background: #585858;
-	text-decoration: none;
-}
-.M02 {
-	width: 100px;
-	background: #585858;
-	position: absolute;
-	top: 0;
-	left: -9999px;
-}
-.M02>li a:hover {
-	display: block;
-	background: #585858;
-	text-decoration: none;
-}
-.M01>li:hover .M02{
-	left: 100px;
-}
-#wrap{
-	display: flex;
-	position: absolute;
-	top: 30%
-}
-.a{
-	width: 300px;
-	height: 250px;
-	display: flex;
-	top: 30%;
-	
-}
-.b, .c, .d {
-	width: 300px;
-	height: 250px;
-	display: flex;
-	top: 30%;
-}
+
 #mainwrap {
 	min-height: 100vh;
 	porition: relative;
