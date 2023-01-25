@@ -88,9 +88,7 @@
 .a{
 	width: 300px;
 	height: 250px;
-	margin-left: 320px;
 	display: flex;
-	margin-bottom: 40px;
 	top: 30%;
 	
 }
@@ -98,8 +96,6 @@
 	width: 300px;
 	height: 250px;
 	display: flex;
-	margin-left: 60px;
-	margin-bottom: 40px;
 	top: 30%;
 }
 #mainwrap {
@@ -320,4 +316,18 @@
 }
 .first-a:hover #firstimg {
   transform: scale(1.4);
+}
+.sA {
+	width: 300px;
+	height: 250px;
+	display: flex;
+	top: 30%;
+	left:300px;
+}
+.sB, .sC, .sD{
+	width: 300px;
+	height: 250px;
+	display: flex;
+	top: 30%;
+	left:500px;
 }

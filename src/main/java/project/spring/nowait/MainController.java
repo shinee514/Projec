@@ -123,6 +123,30 @@ SignupService signService;
 	public ModelAndView Chhn() {
 	    return new ModelAndView("nowait/rev/chhn");
 	}
+	@RequestMapping(value="/recjs", method = RequestMethod.GET)
+	public ModelAndView Recjs() {
+	    return new ModelAndView("nowait/rec/recjs");
+	}
+	@RequestMapping(value="/recch", method = RequestMethod.GET)
+	public ModelAndView Recch() {
+	    return new ModelAndView("nowait/rec/recch");
+	}
+	@RequestMapping(value="/recms", method = RequestMethod.GET)
+	public ModelAndView Recms() {
+	    return new ModelAndView("nowait/rec/recms");
+	}
+	@RequestMapping(value="/salech", method = RequestMethod.GET)
+	public ModelAndView Salech() {
+	    return new ModelAndView("nowait/sale/salech");
+	}
+	@RequestMapping(value="/salejs", method = RequestMethod.GET)
+	public ModelAndView Salejs() {
+	    return new ModelAndView("nowait/sale/salejs");
+	}
+	@RequestMapping(value="/salems", method = RequestMethod.GET)
+	public ModelAndView Salems() {
+	    return new ModelAndView("nowait/sale/salems");
+	}
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {

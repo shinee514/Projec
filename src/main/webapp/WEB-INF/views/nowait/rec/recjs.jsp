@@ -79,6 +79,38 @@ ul {
 				</div>
 
 			</div>
+							
+				<ul class="contentbox">
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=13">
+								<img class="a" src="${path}/resources/images/recommend/hy.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=14">
+								<img class="a" src="${path}/resources/images/recommend/pd.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=16">
+								<img class="a" src="${path}/resources/images/recommend/ssm.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=10">
+								<img class="a" src="${path}/resources/images/recommend/ct.png">
+							</a>
+						</div>
+					</li>
+				</ul>
+				
 		</div>
 	</div>
 <footer id="mainfooter">

@@ -48,19 +48,19 @@ ul {
 			<div id="all2">
 				<div id="left">
 					<div id="leftmenu">
-						<div id="title">주변맛집추천</div>
+						<div id="title">타임세일</div>
 						<div id="submenu">
 
 							<ul>
 								<li><a href="#" id="left0" class="lnb">서울</a>
 									<ul class="depth2">
 
-										<li><a class="recjs" href="#">잠실</a></li>
-										<li><a class="recch" href="#">천호</a></li>
+										<li><a class="salejs" href="#">잠실</a></li>
+										<li><a class="salech" href="#">천호</a></li>
 									</ul></li>
 								<li><a href="#" id="left1" class="lnb">경기</a>
 									<ul class="depth2">
-										<li><a class="recms" href="#">하남미사</a></li>
+										<li><a class="salems" href="#">하남미사</a></li>
 									</ul></li>
 								<li><a href="#" id="left2" class="lnb">인천</a>
 
@@ -79,6 +79,38 @@ ul {
 				</div>
 
 			</div>
+							
+				<ul class="contentbox">
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=8">
+								<img class="a" src="${path}/resources/images/recommend/yp.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=9">
+								<img class="a" src="${path}/resources/images/recommend/bj.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=11">
+								<img class="a" src="${path}/resources/images/recommend/ds.png">
+							</a>
+						</div>
+					</li>
+					<li class="contentimg">
+						<div class="boximg">
+							<a href="/detail?resId=15">
+								<img class="a" src="${path}/resources/images/recommend/sf.png">
+							</a>
+						</div>
+					</li>
+				</ul>
+				
 		</div>
 	</div>
 <footer id="mainfooter">
@@ -128,18 +160,18 @@ ul {
 	});
 	/*인기 줄서기*/
 	$(function() {
-		$(".recjs").click(function() {
-			location.href = "/recjs"
+		$(".salejs").click(function() {
+			location.href = "/salejs"
 		});
 	});
 	$(function() {
-		$(".recch").click(function() {
-			location.href = "/recch"
+		$(".salech").click(function() {
+			location.href = "/salech"
 		});
 	});
 	$(function() {
-		$(".recms").click(function() {
-			location.href = "/recms"
+		$(".salems").click(function() {
+			location.href = "/salems"
 		});
 	});
 </script>

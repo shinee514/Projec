@@ -1,99 +1,86 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
 <meta charset="UTF-8">
-<title>주변맛집추천</title>
-<link href="${path}/resources/css/style.css" rel="stylesheet"/>
+<title>메인화면</title>
+<link href="${path}/resources/css/style.css" rel="stylesheet" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+<style>
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul {
+	list-style: none;
+}
+</style>
 </head>
 <body id="mainbody">
-<header>
-<a href="/main">
- 	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
-</a>
-</header>
-<nav>
-	<ul class="nav-1">
-		<li class="nav-item1"> <a href="">Login</a></li>
-		<li class="nav-item1"> <a href="">My Page</a></li>
-		<li class="nav-item1"> <a href="">Join</a></li>
-		<li class="nav-item1"> <a href="">QnA</a></li>
-	</ul>
-</nav>
-<nav>
-	<ul class="nav-2">
-		<li class="nav-item2"> <a href="/rev">원격 줄서기/예약</a></li>
-		<li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
-		<li class="nav-item2"> <a href="/sale">타임세일</a></li>
-	</ul>
-</nav>
-<div id="menu2">
-	<ul class="M01">
-       <li><a href="#">서울</a>
-       	 <ul class="M02">
-       	 	<li><a href="">잠실</a></li>
-       	 	<li><a href="">천호</a></li>
-         </ul>
-       </li>
-       <li><a href="#">경기</a>
-       	 <ul class="M02">
-       	 	<li><a href="">하남미사</a></li>
-         </ul>
-       </li>
-       <li><a href="#">인천</a></li>
-       <li><a href="#">강원</a></li>
-       <li><a href="#">충청</a></li>
-       <li><a href="#">경상</a></li>
-       <li><a href="#">전라</a></li>
-    </ul>
-</div>
-<div id="mainwrap">
-<section>
-	<a href="/detail?resId=20">
-		<img class="a" src="${path}/resources/images/recommend/gs.png">
-	</a>
-	<a href="/detail?resId=6">
-		<img class="a" src="${path}/resources/images/recommend/tsd.png">
-	</a>
-	<a href="/detail?resId=3">
-		<img class="a" src="${path}/resources/images/recommend/ll.png">
-	</a>
-</section>
-<section>
-	<a href="/detail?resId=10">
-		<img class="b" src="${path}/resources/images/recommend/ct.png">
-	</a>
-	<a href="/detail?resId=12">
-		<img class="b" src="${path}/resources/images/recommend/hd.png">
-	</a>
-	<a href="/detail?resId=13">
-		<img class="b" src="${path}/resources/images/recommend/hy.png">
-	</a>
-</section>
-<section>
-	<a href="/detail?resId=24">
-		<img class="c" src="${path}/resources/images/recommend/ph.png">
-	</a>
-	<a href="/detail?resId=16">
-		<img class="c" src="${path}/resources/images/recommend/ssm.png">
-	</a>
-	<a href="/detail?resId=2">
-		<img class="c" src="${path}/resources/images/recommend/dp.png">
-	</a>
-</section>
-<section>
-	<a href="/detail?resId=11">
-		<img class="d" src="${path}/resources/images/recommend/ds.png">
-	</a>
-	<a href="/detail?resId=22">
-		<img class="d" src="${path}/resources/images/recommend/kk.png">
-	</a>
-	<a href="/detail?resId=5">
-		<img class="d" src="${path}/resources/images/recommend/sg.png">
-	</a>
-</section>
-</div>
+	<div id="mainwrap">
+		<section id="mainsection">
+			<header>
+				<a href="/main"> <img src="${path}/resources/images/logo2.png"
+					alt="My Image" width="200" height="150">
+				</a>
+			</header>
+			<nav>
+				<ul class="nav-1">
+					<li class="nav-item1"><a href="">Login</a></li>
+					<li class="nav-item1"><a href="">My Page</a></li>
+					<li class="nav-item1"><a href="">Join</a></li>
+					<li class="nav-item1"><a href="">QnA</a></li>
+				</ul>
+			</nav>
+			<nav>
+				<ul class="nav-2">
+					<li class="nav-item2"><a href="/rev">원격 줄서기/예약</a></li>
+					<li class="nav-item2"><a href="/recommend">주변맛집추천</a></li>
+					<li class="nav-item2"><a href="/sale">타임세일</a></li>
+				</ul>
+			</nav>
+		</section>
+		<div id="all">
+			<div id="all2">
+				<div id="left">
+					<div id="leftmenu">
+						<div id="title">타임세일</div>
+						<div id="submenu">
+
+							<ul>
+								<li><a href="#" id="left0" class="lnb">서울</a>
+									<ul class="depth2">
+
+										<li><a class="salejs" href="#">잠실</a></li>
+										<li><a class="salech" href="#">천호</a></li>
+									</ul></li>
+								<li><a href="#" id="left1" class="lnb">경기</a>
+									<ul class="depth2">
+										<li><a class="salems" href="#">하남미사</a></li>
+									</ul></li>
+								<li><a href="#" id="left2" class="lnb">인천</a>
+
+								<li><a href="#" id="left3" class="lnb">강원</a>
+
+								<li><a href="#" id="left4" class="lnb">충청</a>
+
+								<li><a href="#" id="left5" class="lnb">경상</a>
+								</li>
+							</ul>
+
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
 <footer id="mainfooter">
 		<hr width="100%">
 		<nav>
@@ -107,4 +94,53 @@
 		</p>
 	</footer>
 </body>
+<script>
+	var currentLeft;
+	var prevLeft;
+	$("ul.depth2").hide();
+	lnb("left0");
+	function lnb(str) {
+		currentLeft = $("#" + str);
+		prevLeft = currentLeft;
+		currentLeft.addClass("on");
+		currentLeft.next(".depth2").slideDown("fast");
+	}
+	$("a.lnb").click(function() {
+		if ($(this).hasClass("on") == false) {
+			$("a.lnb").each(function() {
+				if ($(this).hasClass("on")) {
+					$(this).removeClass("on");
+					//전체의 "lnb"클래스에서 "on"클래스가 삭제됩니다.
+					//"on" 클래스가 추가되면 활성화된 1 Depth로 지정됩니다.
+					$(this).next(".depth2").slideUp("fast");
+					//전체의 2 Depth에 해당하는 <ul>태그가 닫힙니다.
+				}
+			});
+			$(this).addClass("on"); // 클릭된 메뉴를 활성화시킵니다.
+			$(this).next(".depth2").slideDown("fast");
+			//클릭된 메뉴의 서브 메뉴가 열립니다. $(this).next().slideDown("fast");
+		} else {
+			//console.log ("현재 활성화 중입니다.")
+			$(this).removeClass("on");
+			$(this).next(".depth2").slideUp("fast");
+		}
+
+	});
+	/*인기 줄서기*/
+	$(function() {
+		$(".salejs").click(function() {
+			location.href = "/salejs"
+		});
+	});
+	$(function() {
+		$(".salech").click(function() {
+			location.href = "/salech"
+		});
+	});
+	$(function() {
+		$(".salems").click(function() {
+			location.href = "/salems"
+		});
+	});
+</script>
 </html>
