@@ -32,7 +32,7 @@
 	</nav>
 	</section>
 	
-	
+	<h2>예약 완료</h2>
 	예약번호 : ${ rvData.rv_id }<br>
 	예약자 성함 : ${ rvData.cust_name }<br>
 	예약 식당 : ${ rvData.res_name }<br>
