@@ -10,4 +10,6 @@ public interface MainService {
 	
 	String insertRv(Map<String, Object> map);
 	
+	Map<String, Object> name(Map<String, Object> map);
+	
 }

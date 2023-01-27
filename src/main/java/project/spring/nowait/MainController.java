@@ -39,10 +39,10 @@ SignupService signService;
 	public ModelAndView Rev() {
 	    return new ModelAndView("nowait/rev");
 	}
-	@RequestMapping(value="/rv", method = RequestMethod.GET)
-	public ModelAndView Rv() {
-	    return new ModelAndView("nowait/rv");
-	}
+	//@RequestMapping(value="/rv", method = RequestMethod.GET)
+	//public ModelAndView Rv() {
+	    //return new ModelAndView("nowait/rv");
+	//}
 	//@RequestMapping(value="/rvcf", method = RequestMethod.GET)
 	//public ModelAndView Rvcf() {
 	    //return new ModelAndView("nowait/rvcf");
@@ -157,6 +157,18 @@ SignupService signService;
 	    String resId = map.get("resId").toString();
 	    mav.addObject("resId", resId);
 	    mav.setViewName("/nowait/detail");
+	    return mav;
+	}
+	
+	@RequestMapping(value = "/rv", method = RequestMethod.GET)
+	public ModelAndView rvName(@RequestParam Map<String, Object> map) {
+	    Map<String, Object> nameMap = this.mainService.name(map);
+
+	    ModelAndView mav = new ModelAndView();
+	    mav.addObject("data", nameMap);
+	    String resId = map.get("resId").toString();
+	    mav.addObject("resId", resId);
+	    mav.setViewName("/nowait/rv");
 	    return mav;
 	}
 	

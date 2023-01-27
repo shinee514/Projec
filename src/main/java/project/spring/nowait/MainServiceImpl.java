@@ -30,5 +30,10 @@ public class MainServiceImpl implements MainService {
      return null;
 
  }
+ 
+ @Override
+ public Map<String, Object> name(Map<String, Object> map){
+     return this.mainDao.selectName(map);
+ }
 
 }

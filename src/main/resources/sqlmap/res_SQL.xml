@@ -13,6 +13,7 @@
 <select id="select_detail" parameterType="hashMap" resultType="hashMap">
     <![CDATA[
         select
+        res_id,
         res_name,
         res_kind,
         res_addr,
@@ -25,6 +26,17 @@
         res
         where
         res_id = #{resId}   
+    ]]>
+</select>
+
+<select id="select_name" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_name
+        from
+        res
+        where
+        res_id = #{resId}
     ]]>
 </select>
 

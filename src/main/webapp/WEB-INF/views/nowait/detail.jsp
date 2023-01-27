@@ -42,7 +42,7 @@
 	<form action=''>
   		<input id="detailinput" type='button' 
          value="예약페이지로"
-         onclick= "location.href='/rv'"/>
+         onclick= "location.href='/rv?resId=${ data.res_id }'"/>
     </form>
 	</section>
 		<h1>상세페이지</h1>
