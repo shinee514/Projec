@@ -30,9 +30,9 @@ ul {
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="">Login</a></li>
+					<li class="nav-item1"><a href="/login">Login</a></li>
 					<li class="nav-item1"><a href="">My Page</a></li>
-					<li class="nav-item1"><a href="">Join</a></li>
+					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="">QnA</a></li>
 				</ul>
 			</nav>
@@ -266,13 +266,15 @@ ul {
 </script>
 <footer id="mainfooter">
 	<hr width="100%">
-	<nav>
-		<a href="" target="_blank">Blog</a> <a href="" target="_blank">Github</a>
-	</nav>
-	<p>
-		<span>1</span><br /> <span>2</span><br /> <span>Copyright
-			2023</span>
-	</p>
+		<nav>
+			<a href="" target="_blank">이용약관</a>
+			<a href="" target="_blank">개인정보 처리방침</a>
+		</nav>
+		<p>
+			<h3><span>nowait</span></h3><br/>
+			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
+			<span>© nowait All rights reserved.</span>
+		</p>
 </footer>
 </body>
 </html>
