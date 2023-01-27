@@ -114,17 +114,17 @@ ul {
 		</div>
 	</div>
 <footer id="mainfooter">
-		<hr width="100%">
+	<hr width="100%">
 		<nav>
-			<a href="" target="_blank">Blog</a>
-			<a href="" target="_blank">Github</a>
+			<a href="" target="_blank">이용약관</a>
+			<a href="" target="_blank">개인정보 처리방침</a>
 		</nav>
 		<p>
-			<span>1</span><br/>
-			<span>2</span><br/>
-			<span>Copyright 2023</span>
+			<h3><span>nowait</span></h3><br/>
+			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
+			<span>© nowait All rights reserved.</span>
 		</p>
-	</footer>
+</footer>
 </body>
 <script>
 	var currentLeft;
