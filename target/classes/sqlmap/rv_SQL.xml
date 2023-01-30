@@ -4,9 +4,9 @@
 <insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="rv_id">
     <![CDATA[
     insert into rv
-    (res_name, cust_name, rv_time, rv_date, rv_cnt)
+    (res_name, cust_name, rv_time, rv_date, rv_cnt, rv_chk1, rv_chk2, rv_chk3)
     values
-    (#{res_name}, #{cust_name}, #{rv_time}, #{rv_date}, #{rv_cnt})
+    (#{res_name}, #{cust_name}, #{rv_time}, #{rv_date}, #{rv_cnt}, #{rv_chk1}, #{rv_chk2}, #{rv_chk3})
     ]]>
 </insert>
 

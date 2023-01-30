@@ -83,8 +83,8 @@ ul {
 				<ul class="contentbox">
 					<li class="contentimg">
 						<div class="boximg">
-							<a href="/detail?resId=8">
-								<img class="a" src="${path}/resources/images/recommend/yp.png">
+							<a href="/detail?resId=12">
+								<img class="a" src="${path}/resources/images/recommend/hd.png">
 							</a>
 						</div>
 					</li>

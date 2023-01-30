@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html id='mainhtml'>
 <head>
@@ -16,30 +17,30 @@
 </head>
 <body id='mainbody'>
 <div id='mainwrap'>
-	<section id='mainsection'>
+   <section id='mainsection'>
 <header>
 <a href="/first"> 
-	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
+   <img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
 </a>
 </header>
-	<nav>
-		<ul class="nav-1">
-			<li class="nav-item1"> <a href="/login">Login</a></li>
-			<li class="nav-item1"> <a href="">My Page</a></li>
-			<li class="nav-item1"> <a href="/signup">Join</a></li>
-			<li class="nav-item1"> <a href="">QnA</a></li>
-		</ul>
-	</nav>
-	<nav>
-		<ul class="nav-2">
-			<li class="nav-item2"> <a href="/rev">원격 줄서기/예약</a></li>
-			<li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
-			<li class="nav-item2"> <a href="/sale">타임세일</a></li>
-		</ul>
-	</nav>
-	</section>
-	
-	   <article class="container">
+   <nav>
+      <ul class="nav-1">
+         <li class="nav-item1"> <a href="/nowait/login">Login</a></li>
+         <li class="nav-item1"> <a href="">My Page</a></li>
+         <li class="nav-item1"> <a href="/nowait/signup">Join</a></li>
+         <li class="nav-item1"> <a href="">QnA</a></li>
+      </ul>
+   </nav>
+   <nav>
+      <ul class="nav-2">
+         <li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
+         <li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
+         <li class="nav-item2"> <a href="/sale">타임세일</a></li>
+      </ul>
+   </nav>
+   </section>
+   
+      <article class="container">
             <div class="page-header">
                 <div class="col-6 text-center">
                 <h3>로그인</h3>
@@ -47,39 +48,49 @@
                 
                 <article class="container">
             <div class="col-sm-6 col-md-offset-3">
-                <form action="memberjoinpro.do" method="post" role="form" id="usercheck" name="member">
-					<div class="form-group">
+                <form action="/nowait/login" method="post" role="form" autocomplete="off">
+               <div class="form-group">
                         <label for="id">아이디</label>
-                        <input type="text" class="form-control" id="mem_id" name="mem_id" placeholder="ID">
+                        <input type="text" class="form-control" id="cust_id" name="cust_id" placeholder="ID">
                         <div class="eheck_font" id="id_check"></div>
                     </div>
                     
                     <div class="form-group">
                         <label for="pw">비밀번호</label>
-                        <input type="password" class="form-control" id="mem_pw" name="mem_pw" placeholder="PASSWORD">
+                        <input type="password" class="form-control" id="cust_pw" name="cust_pw" placeholder="PASSWORD">
                         <div class="eheck_font" id="pw_check"></div>
                     </div>
                     
                      <div class="form-group text-center">
-       				<button type="submit" class="btn btn-primary">로그인</button> 
+                   <button type="submit" class="btn btn-primary">로그인</button> 
   </div>
+<c:if test="${msg == false}">
+   <p style="color:#f00;">로그인에 실패했습니다. 아이디 또는 패스워드를 다시 입력해주세요.</p>
+</c:if>
+
+<c:if test="${nowait != null }">
+   <p>${nowait.cust_name}님 환영합니다.</p>
+</c:if>
+
   </form>
+  
   </div>
   </article>
   </div>
   </article>
-	
-	<footer id='mainfooter'>
-		<hr width="100%">
-		<nav>
-			<a href="" target="_blank">이용약관</a>
-			<a href="" target="_blank">개인정보 처리방침</a>
-		</nav>
-		<p></p>
-			<h3><span>nowait</span></h3><br/>
-			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
-			<span>© nowait All rights reserved.</span>
-	</footer>
-	</div>
+   
+   <footer id='mainfooter'>
+      <hr width="100%">
+      <nav>
+         <a href="" target="_blank">Blog</a>
+         <a href="" target="_blank">Github</a>      
+      </nav>
+      <p>
+         <span>1</span><br/>
+         <span>2</span><br/>
+         <span>Copyright 2023</span>
+      </p>
+   </footer>
+   </div>
 </body>
 </html>

@@ -12,19 +12,33 @@
   <property name="driverClassName"
    value="com.mysql.cj.jdbc.Driver" />
   <property name="url"
-   value="jdbc:mysql://localhost:8081/nowait?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+   value="jdbc:mysql://localhost:3306/nowait?serverTimezone=UTC&amp;useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
   <property name="username" value="root" />
   <property name="password" value="1234" />
  </bean>
 
- <bean id="sqlSessionFactory"
-  class="org.mybatis.spring.SqlSessionFactoryBean">
+<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
   <property name="dataSource" ref="dataSource" />
-  <property name="mapperLocations"
-   value="classpath:/sqlmap/**/*_SQL.xml" />
+  <property name="mapperLocations"  value="classpath:/sqlmap/**/*_SQL.xml" />
+  <property name="transactionFactory">
+           <bean class="org.mybatis.spring.transaction.SpringManagedTransactionFactory" />
+      </property>
  </bean>
- <bean id="sqlSessionTemplate"
+ 
+<!--  <bean id="sqlSessionTemplate"
   class="org.mybatis.spring.SqlSessionTemplate">
   <constructor-arg index="0" ref="sqlSessionFactory" />
- </bean>  
+ </bean>   -->
+ 
+<bean id="sqlSession" 
+  class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+ 
+
+<!-- 트랜잭션 관리를 위한 bean  -->      
+ <bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<constructor-arg ref="dataSource" />
+	</bean>  
 </beans>

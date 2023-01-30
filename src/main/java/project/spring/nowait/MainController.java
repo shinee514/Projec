@@ -15,9 +15,11 @@ public class MainController {
 
 @Autowired
 MainService mainService;
+
+/*
 @Autowired
 SignupService signService;
-
+*/
 
 	//@RequestMapping(value="/detail", method = RequestMethod.GET)
 	//public ModelAndView Detail() {
@@ -197,6 +199,7 @@ SignupService signService;
 	    return mav;
 	}
 	
+	/*
 	@RequestMapping(value="/signup", method = RequestMethod.GET)
 	public ModelAndView signup() {
 	    return new ModelAndView("nowait/signup");
@@ -219,4 +222,6 @@ SignupService signService;
 	public ModelAndView login() {
 	    return new ModelAndView("nowait/login");
 	}
+	*/
+	
 }

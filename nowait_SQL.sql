@@ -34,6 +34,9 @@ create table rv(
     rv_cnt VARCHAR(20) not null,
     res_name VARCHAR(20) NOT NULL,
     cust_name VARCHAR(20) NOT NULL,
+    rv_chk1 VARCHAR(10),
+    rv_chk2 VARCHAR(10) NOT NULL,
+    rv_chk3 VARCHAR(10),
     FOREIGN KEY (res_name) REFERENCES res (res_name),
     FOREIGN KEY (cust_name) REFERENCES cust (cust_name)
 )

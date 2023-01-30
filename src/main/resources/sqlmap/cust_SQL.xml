@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE  mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cust">
+
+<!-- 회원가입 -->
 <insert id="insert" parameterType="hashMap">
     <![CDATA[
     insert into cust
@@ -11,20 +13,35 @@
     ]]>
 </insert>
 
-<select id="select_mypage" parameterType="hashMap" resultType="hashMap">
-    <![CDATA[
-        select
-        cust_id,
-        cust_pw,
-        cust_name,
-        cust_addr,
-        cust_pn,
-        cust_email
-        from
-        cust
-        where
-        cust_id = #{custId}
-    ]]>
+<!-- 로그인 -->
+<select id="login" resultType="project.spring.nowait.CustVO">
+ select
+     cust_id, cust_pw, cust_name, cust_birth, cust_email, cust_pn, cust_oaddr, cust_addr, cust_detailaddr
+ from
+     cust
+ where cust_id = #{cust_id}
+     and cust_pw = #{cust_pw}
 </select>
+
+<!-- 회원정보 수정 -->
+<update id="custUpdate">
+   UPDATE CUST SET
+   cust_pw = #{cust_pw},
+   cust_name = #{cust_name},
+   cust_birth = #{cust_birth},
+   cust_email = #{cust_email},
+   cust_pn = #{cust_pn},
+   cust_oaddr = #{cust_oaddr},
+   cust_addr = #{cust_addr},
+   cust_detailaddr = #{cust_detailaddr}
+   WHERE cust_id = #{cust_id}
+</update>
+
+<!-- 회원탈퇴 -->
+<delete id="withdrawal">
+	delete from cust
+		where cust_id = #{cust_id}
+			and cust_pw = #{cust_pw}
+		</delete>
 
 </mapper>
