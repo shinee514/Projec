@@ -30,10 +30,10 @@ ul {
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="">Login</a></li>
-					<li class="nav-item1"><a href="">My Page</a></li>
-					<li class="nav-item1"><a href="">Join</a></li>
-					<li class="nav-item1"><a href="">QnA</a></li>
+			<li class="nav-item1"> <a href="/nowait/login">Login</a></li>
+			<li class="nav-item1"> <a href="">My Page</a></li>
+			<li class="nav-item1"> <a href="/nowait/signup">Join</a></li>
+			<li class="nav-item1"> <a href="">QnA</a></li>
 				</ul>
 			</nav>
 			<nav>
