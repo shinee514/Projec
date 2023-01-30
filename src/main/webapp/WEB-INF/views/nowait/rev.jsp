@@ -270,11 +270,10 @@ ul {
 			<a href="" target="_blank">이용약관</a>
 			<a href="" target="_blank">개인정보 처리방침</a>
 		</nav>
-		<p>
+		<p></p>
 			<h3><span>nowait</span></h3><br/>
 			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
 			<span>© nowait All rights reserved.</span>
-		</p>
 </footer>
 </body>
 </html>

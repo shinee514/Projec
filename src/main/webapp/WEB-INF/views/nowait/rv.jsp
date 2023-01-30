@@ -33,8 +33,9 @@
 	</section>
 
         <h2>예약하기</h2>
-   <p>음식점명 : <input value="${ data.res_name }" name="res_name" readonly></p>
-   <p>예약자 성함 : <input type="text" name="cust_name" /></p>
+         <form method="POST">
+   <p>음식점명 : <input value="${ data.res_name }" name="res_name" style="border:none" readonly></p>
+   <p>예약자 성함 : <input type="text" name="cust_name" style="border:none" /></p>
    <p>예약날짜 : <input type="date" name="rv_date" /></p>
    <p>예약시간 : <input type="time" name="rv_time" /></p>
    <p>예약 인원수 : <select name="rv_cnt" size="1">
@@ -46,7 +47,8 @@
                     <option value="6명">6명</option>
                     <option value="단체">단체</option>
                 </select></p>
-   <p><input type="submit" value="예약하기" />
+   <p><input type="submit" value="예약하기"/>
+   </form>
 
     <footer id='mainfooter'>
 		<hr width="100%">
@@ -54,11 +56,10 @@
 			<a href="" target="_blank">이용약관</a>
 			<a href="" target="_blank">개인정보 처리방침</a>
 		</nav>
-		<p>
+		<p></p>
 			<h3><span>nowait</span></h3><br/>
 			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
 			<span>© nowait All rights reserved.</span>
-		</p>
 	</footer>
 	</div>
     </body>
