@@ -103,29 +103,29 @@ ul {
 
 				<li class="contentimg">
 					<div class="boximg">
+						<a href="/detail?resId=29"> <img id="misa don"
+							src="./resources/images/recommend/dt.png">
+						</a>
+					</div>
+				</li>
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=30"> <img id="misa don"
+							src="./resources/images/recommend/ks.png">
+						</a>
+					</div>
+				</li>
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=31"> <img id="misa don"
+							src="./resources/images/recommend/sts.png">
+						</a>
+					</div>
+				</li>
+				<li class="contentimg">
+					<div class="boximg">
 						<a href="/detail?resId=3"> <img id="misa don"
 							src="./resources/images/recommend/ll.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=6"> <img id="misa don"
-							src="./resources/images/recommend/tsd.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=7"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
 						</a>
 					</div>
 				</li>

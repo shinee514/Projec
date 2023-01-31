@@ -38,6 +38,7 @@
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
 			</ul>
+			<h1>메뉴</h1>
 			<img class="reslogo"
 				src="${path}/resources/images/${ data.res_logo }" width="400"
 				height="250"> <img class="res1"

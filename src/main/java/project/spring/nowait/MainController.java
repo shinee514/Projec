@@ -1,6 +1,7 @@
 package project.spring.nowait;
 
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,10 +54,10 @@ SignupService signService;
 	public ModelAndView Sale() {
 	    return new ModelAndView("nowait/sale");
 	}
-	@RequestMapping(value="/popgd", method = RequestMethod.GET)
-	public ModelAndView Popgd() {
-	    return new ModelAndView("nowait/rev/popgd");
-	}
+	//@RequestMapping(value="/popgd", method = RequestMethod.GET)
+	//public ModelAndView Popgd() {
+	    //return new ModelAndView("nowait/rev/popgd");
+	//}
 	@RequestMapping(value="/popsp", method = RequestMethod.GET)
 	public ModelAndView Popsp() {
 	    return new ModelAndView("nowait/rev/popsp");
@@ -162,6 +163,18 @@ SignupService signService;
 	    return mav;
 	}
 	
+	@RequestMapping(value = "/detailmenu", method = RequestMethod.GET)
+	public ModelAndView detailMenu(@RequestParam Map<String, Object> map) {
+	    Map<String, Object> detailMap = this.mainService.detail(map);
+
+	    ModelAndView mav = new ModelAndView();
+	    mav.addObject("data", detailMap);
+	    String resId = map.get("resId").toString();
+	    mav.addObject("resId", resId);
+	    mav.setViewName("/nowait/detailmenu");
+	    return mav;
+	}
+	
 	@RequestMapping(value = "/rv", method = RequestMethod.GET)
 	public ModelAndView rvName(@RequestParam Map<String, Object> map) {
 	    Map<String, Object> nameMap = this.mainService.name(map);
@@ -198,6 +211,17 @@ SignupService signService;
 	    mav.setViewName("/nowait/rvcf");
 	    return mav;
 	}
+	
+	@RequestMapping(value = "/popgd", method = RequestMethod.GET)
+	public ModelAndView list(@RequestParam Map<String, Object> map) {  
+
+	List<Map<String, Object>> list = this.mainService.list(map);  
+
+	ModelAndView mav = new ModelAndView();  
+	mav.addObject("data", list);  
+	mav.setViewName("/nowait/rev/popgd");
+	return mav;  
+	}  
 	
 	/*
 	@RequestMapping(value="/signup", method = RequestMethod.GET)

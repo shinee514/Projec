@@ -40,4 +40,17 @@
     ]]>
 </select>
 
+<select id="select_pop_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_addr
+        from
+        res
+        where
+        res_addr LIKE '%천호%'
+    ]]>
+</select>
+
 </mapper>

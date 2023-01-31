@@ -1,5 +1,6 @@
 package project.spring.nowait;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,5 +36,10 @@ public class MainServiceImpl implements MainService {
  public Map<String, Object> name(Map<String, Object> map){
      return this.mainDao.selectName(map);
  }
+ 
+ @Override  
+ public List<Map<String, Object>> list(Map<String, Object> map){  
+	 return this.mainDao.selectPopCh(map);
+ }  
 
 }

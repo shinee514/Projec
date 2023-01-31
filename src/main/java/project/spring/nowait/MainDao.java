@@ -1,5 +1,6 @@
 package project.spring.nowait;
 
+import java.util.List;
 import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -28,5 +29,10 @@ public class MainDao {
  public Map<String, Object> selectName(Map<String, Object> map) {
 	    return this.sqlSessionTemplate.selectOne("res.select_name", map);
 	}
+ 
+ public List<Map<String, Object>> selectPopCh(Map<String, Object> map) {  
+	 return this.sqlSessionTemplate.selectList("res.select_pop_ch", map);  
+	 }  
+ 
  
 }

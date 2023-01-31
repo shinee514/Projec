@@ -103,8 +103,8 @@ ul {
 
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=23"> <img id="misa don"
-							src="./resources/images/recommend/mt.png">
+						<a href="/detail?resId=55"> <img id="misa don"
+							src="./resources/images/recommend/hn.png">
 						</a>
 					</div>
 				</li>
@@ -124,8 +124,8 @@ ul {
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=19"> <img id="misa don"
-							src="./resources/images/recommend/gn.png">
+						<a href="/detail?resId=23"> <img id="misa don"
+							src="./resources/images/recommend/mt.png">
 						</a>
 					</div>
 				</li>

@@ -103,29 +103,29 @@ ul {
 
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
+						<a href="/detail?resId=34"> <img id="misa don"
+							src="./resources/images/recommend/dw.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=2"> <img id="misa don"
-							src="./resources/images/recommend/dp.png">
+						<a href="/detail?resId=35"> <img id="misa don"
+							src="./resources/images/recommend/hc.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/cj.png">
+						<a href="/detail?resId=36"> <img id="misa don"
+							src="./resources/images/recommend/ks.png">
 						</a>
 					</div>
 				</li>
 				<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=4"> <img id="misa don"
-							src="./resources/images/recommend/pk.png">
+						<a href="/detail?resId=37"> <img id="misa don"
+							src="./resources/images/recommend/mm.png">
 						</a>
 					</div>
 				</li>
