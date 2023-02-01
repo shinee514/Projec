@@ -105,42 +105,13 @@ ul {
 			<c:forEach var="row" items="${data}">
 			<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=${row.res_id}"> <img id="misa don"
-							src="./resources/images/${row.res_first}">
+						<a href="/detail?resId=${row.res_id}"> 
+							<img src="./resources/images/${row.res_first}">
 						</a>
 					</div>
 				</li>
 			</c:forEach>
- 			
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=1"> <img id="misa don"
-							src="./resources/images/recommend/cj.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=8"> <img id="misa don"
-							src="./resources/images/recommend/yp.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=7"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
-						</a>
-					</div>
-				</li>
-
+			
 			</ul>
 		</div>
 	</div>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
@@ -101,34 +102,15 @@ ul {
 			</div>
 			<ul class="contentbox">
 
-				<li class="contentimg">
+			<c:forEach var="row" items="${data}">
+			<li class="contentimg">
 					<div class="boximg">
-						<a href="/detail?resId=32"> <img id="misa don"
-							src="./resources/images/recommend/as.png">
+						<a href="/detail?resId=${row.res_id}"> 
+							<img src="./resources/images/${row.res_first}">
 						</a>
 					</div>
 				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=5"> <img id="misa don"
-							src="./resources/images/recommend/sg.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=7"> <img id="misa don"
-							src="./resources/images/recommend/yk.png">
-						</a>
-					</div>
-				</li>
-				<li class="contentimg">
-					<div class="boximg">
-						<a href="/detail?resId=8"> <img id="misa don"
-							src="./resources/images/recommend/yp.png">
-						</a>
-					</div>
-				</li>
+			</c:forEach>
 
 			</ul>
 		</div>

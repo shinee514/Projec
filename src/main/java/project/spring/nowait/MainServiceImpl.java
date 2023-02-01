@@ -38,8 +38,122 @@ public class MainServiceImpl implements MainService {
  }
  
  @Override  
- public List<Map<String, Object>> list(Map<String, Object> map){  
+ public List<Map<String, Object>> listPopCh(Map<String, Object> map){  
 	 return this.mainDao.selectPopCh(map);
- }  
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listPopJs(Map<String, Object> map){  
+	 return this.mainDao.selectPopJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listPopHn(Map<String, Object> map){  
+	 return this.mainDao.selectPopHn(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listKorCh(Map<String, Object> map){  
+	 return this.mainDao.selectKorCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listKorJs(Map<String, Object> map){  
+	 return this.mainDao.selectKorJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listKorHn(Map<String, Object> map){  
+	 return this.mainDao.selectKorHn(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listUsaCh(Map<String, Object> map){  
+	 return this.mainDao.selectUsaCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listUsaJs(Map<String, Object> map){  
+	 return this.mainDao.selectUsaJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listUsaHn(Map<String, Object> map){  
+	 return this.mainDao.selectUsaHn(map);
+	 
+ } @Override  
+ public List<Map<String, Object>> listChCh(Map<String, Object> map){  
+	 return this.mainDao.selectChCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listChJs(Map<String, Object> map){  
+	 return this.mainDao.selectChJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listChHn(Map<String, Object> map){  
+	 return this.mainDao.selectChHn(map);
+	 
+ } @Override  
+ public List<Map<String, Object>> listJpCh(Map<String, Object> map){  
+	 return this.mainDao.selectJpCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listJpJs(Map<String, Object> map){  
+	 return this.mainDao.selectJpJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listJpHn(Map<String, Object> map){  
+	 return this.mainDao.selectJpHn(map);
+	 
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listHofCh(Map<String, Object> map){  
+	 return this.mainDao.selectHofCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listHofJs(Map<String, Object> map){  
+	 return this.mainDao.selectHofJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listHofHn(Map<String, Object> map){  
+	 return this.mainDao.selectHofHn(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listRecCh(Map<String, Object> map){  
+	 return this.mainDao.selectHofCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listRecJs(Map<String, Object> map){  
+	 return this.mainDao.selectHofJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listRecHn(Map<String, Object> map){  
+	 return this.mainDao.selectHofHn(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listSaleCh(Map<String, Object> map){  
+	 return this.mainDao.selectHofCh(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listSaleJs(Map<String, Object> map){  
+	 return this.mainDao.selectHofJs(map);
+ }
+ 
+ @Override  
+ public List<Map<String, Object>> listSaleHn(Map<String, Object> map){  
+	 return this.mainDao.selectHofHn(map);
+ }
 
 }

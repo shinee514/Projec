@@ -20,12 +20,11 @@
         res_logo,
         res_logo1,
         res_logo2,
-        res_map,
-        res_menu
+        res_map
         from
         res
         where
-        res_id = #{resId}   
+        res_id = #{resId}
     ]]>
 </select>
 
@@ -45,11 +44,310 @@
         select
         res_id,
         res_first,
-        res_addr
+        res_cf
         from
         res
         where
-        res_addr LIKE '%천호%'
+        res_cf LIKE '%인기강동%'
+    ]]>
+</select>
+
+<select id="select_pop_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%인기송파%'
+    ]]>
+</select>
+
+<select id="select_pop_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%인기하남%'
+    ]]>
+</select>
+
+<select id="select_kor_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%한식강동%'
+    ]]>
+</select>
+
+<select id="select_kor_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%한식송파%'
+    ]]>
+</select>
+
+<select id="select_kor_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%한식하남%'
+    ]]>
+</select>
+
+<select id="select_usa_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%양식강동%'
+    ]]>
+</select>
+
+<select id="select_usa_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%양식송파%'
+    ]]>
+</select>
+
+<select id="select_usa_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%양식하남%'
+    ]]>
+</select>
+
+<select id="select_ch_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%중식강동%'
+    ]]>
+</select>
+
+<select id="select_ch_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%중식송파%'
+    ]]>
+</select>
+
+<select id="select_ch_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%중식하남%'
+    ]]>
+</select>
+
+<select id="select_jp_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%일식강동%'
+    ]]>
+</select>
+
+<select id="select_jp_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%일식송파%'
+    ]]>
+</select>
+
+<select id="select_jp_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%일식하남%'
+    ]]>
+</select>
+
+<select id="select_hof_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%호프강동%'
+    ]]>
+</select>
+
+<select id="select_hof_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%호프송파%'
+    ]]>
+</select>
+
+<select id="select_hof_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%호프하남%'
+    ]]>
+</select>
+
+<select id="select_rec_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%추천강동%'
+    ]]>
+</select>
+
+<select id="select_rec_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%추천송파%'
+    ]]>
+</select>
+
+<select id="select_rec_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%추천하남%'
+    ]]>
+</select>
+
+<select id="select_sale_ch" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%세일강동%'
+    ]]>
+</select>
+
+<select id="select_sale_js" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%세일송파%'
+    ]]>
+</select>
+
+<select id="select_sale_hn" parameterType="hashMap" resultType="hashMap">
+    <![CDATA[
+        select
+        res_id,
+        res_first,
+        res_cf
+        from
+        res
+        where
+        res_cf LIKE '%세일하남%'
     ]]>
 </select>
 

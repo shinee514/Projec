@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
@@ -80,36 +81,19 @@ ul {
 
 			</div>
 			
-				<ul class="contentbox">
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=1">
-								<img class="a" src="${path}/resources/images/recommend/cj.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=5">
-								<img class="a" src="${path}/resources/images/recommend/sg.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=8">
-								<img class="a" src="${path}/resources/images/recommend/yp.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=3">
-								<img class="a" src="${path}/resources/images/recommend/ll.png">
-							</a>
-						</div>
-					</li>
-				</ul>
+			<ul class="contentbox">
+				
+			<c:forEach var="row" items="${data}">
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=${row.res_id}"> 
+							<img src="./resources/images/${row.res_first}">
+						</a>
+					</div>
+				</li>
+			</c:forEach>
+			
+			</ul>
 				
 			</div>
 	</div>

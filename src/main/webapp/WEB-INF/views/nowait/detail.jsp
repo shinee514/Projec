@@ -25,7 +25,7 @@
 				</ul>
 			</nav>
 			<c:if test="${nowait != null }">
-				<p>${nowait.cust_name}님환영합니다.</p>
+				<p>${nowait.cust_name}님 환영합니다.</p>
 			</c:if>
 			<nav>
 				<ul class="nav-2">
@@ -46,8 +46,7 @@
 				src="${path}/resources/images/${ data.res_logo2 }" width="200"
 				height="120"> <img class="resmap"
 				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350"> <img class="resmenu"
-				src="${path}/resources/images/${ data.res_menu }">
+				height="350">
 			<p class="text1">${ data.res_name }</p>
 			<p class="text2">${ data.res_kind }</p>
 			<p class="text3">${ data.res_addr }</p>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
@@ -81,35 +82,18 @@ ul {
 			</div>
 			
 			<ul class="contentbox">
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=21">
-								<img class="a" src="${path}/resources/images/recommend/jey.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=24">
-								<img class="a" src="${path}/resources/images/recommend/ph.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=18">
-								<img class="a" src="${path}/resources/images/recommend/gj.png">
-							</a>
-						</div>
-					</li>
-					<li class="contentimg">
-						<div class="boximg">
-							<a href="/detail?resId=20">
-								<img class="a" src="${path}/resources/images/recommend/gs.png">
-							</a>
-						</div>
-					</li>
-				</ul>
+				
+			<c:forEach var="row" items="${data}">
+				<li class="contentimg">
+					<div class="boximg">
+						<a href="/detail?resId=${row.res_id}"> 
+							<img src="./resources/images/${row.res_first}">
+						</a>
+					</div>
+				</li>
+			</c:forEach>
+			
+			</ul>
 				
 		</div>
 	</div>
@@ -130,7 +114,7 @@ ul {
 	var currentLeft;
 	var prevLeft;
 	$("ul.depth2").hide();
-	lnb("left0");
+	lnb("left1");
 	function lnb(str) {
 		currentLeft = $("#" + str);
 		prevLeft = currentLeft;
