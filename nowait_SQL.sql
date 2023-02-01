@@ -4,7 +4,7 @@ CREATE TABLE `cust` (
   `cust_name` VARCHAR(20) UNIQUE KEY,
   `cust_birth` VARCHAR(20) NOT NULL,
   `cust_email` VARCHAR(50) NOT NULL,
-  `cust_pn` VARCHAR(20) NOT NULL,
+  `cust_pn` VARCHAR(20) UNIQUE KEY,
   `cust_oaddr` VARCHAR(20) NOT NULL,
   `cust_addr` VARCHAR(100) NOT NULL,
   `cust_detailaddr` VARCHAR(45) NOT NULL
@@ -47,6 +47,18 @@ create table rv(
     rv_chk3 VARCHAR(10),
     FOREIGN KEY (res_name) REFERENCES res (res_name),
     FOREIGN KEY (cust_name) REFERENCES cust (cust_name)
+)
+COLLATE='utf8mb4_general_ci'
+;
+
+create table num(
+	num_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    res_name VARCHAR(20) NOT NULL,
+    cust_name VARCHAR(20) NOT NULL,
+    cust_pn VARCHAR(20) NOT NULL,
+    FOREIGN KEY (res_name) REFERENCES res (res_name),
+    FOREIGN KEY (cust_name) REFERENCES cust (cust_name),
+    FOREIGN KEY (cust_pn) REFERENCES cust (cust_pn)
 )
 COLLATE='utf8mb4_general_ci'
 ;

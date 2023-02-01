@@ -34,36 +34,27 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
-			<ul class="detailnav1">
-				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
-				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
+			
+			<form action="" id="joinForm" method="POST">
+			
+						<p class="rvservcice">
+							음식점명 : <input value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+						</p>
+						
+						<p class="rvservcice">
+							예약자 이름 : <input value="${ nowait.cust_name }" name="cust_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+						</p>
+						
+						<p class="rvservcice">
+							예약자 전화번호 : <input value="${ nowait.cust_pn }" name="cust_pn" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+						</p>
+
+			<ul class="footBtwrap clearfix">
+
+				<li><button class="fpmgBt2">원격줄서기</button></li>
 			</ul>
-			<img class="reslogo"
-				src="${path}/resources/images/${ data.res_logo }" width="400"
-				height="250"> <img class="res1"
-				src="${path}/resources/images/${ data.res_logo1 }" width="200"
-				height="120"> <img class="res2"
-				src="${path}/resources/images/${ data.res_logo2 }" width="200"
-				height="120"> <img class="resmap"
-				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350">
-			<p class="text1">${ data.res_name }</p>
-			<p class="text2">${ data.res_kind }</p>
-			<p class="text3">${ data.res_addr }</p>
-			<form action=''>
-				<input id="detailinput" type='button' value="예약페이지로"
-					onclick="location.href='/rv?resId=${ data.res_id }'" />
-
-			</form>
+		</form>
 			
-			<form action=''>
-				<input type='button' value="원격줄서기"
-					onclick="location.href='/num?resId=${ data.res_id }'" />
-
-			</form>
-			
-		</section>
-
 		<footer id="mainfooter">
 			<hr width="100%">
 

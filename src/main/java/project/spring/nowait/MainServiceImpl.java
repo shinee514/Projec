@@ -33,8 +33,28 @@ public class MainServiceImpl implements MainService {
  }
  
  @Override
+ public Map<String, Object> num(Map<String, Object> map){
+     return this.mainDao.selectNum(map);
+ }
+ 
+ @Override
+ public String insertNum(Map<String, Object> map) {
+     int affectRowCount = this.mainDao.insertNum(map);
+     if (affectRowCount ==  1) {
+         return map.get("num_id").toString();
+     }
+     return null;
+
+ }
+ 
+ @Override
  public Map<String, Object> name(Map<String, Object> map){
      return this.mainDao.selectName(map);
+ }
+ 
+ @Override
+ public Map<String, Object> name2(Map<String, Object> map){
+     return this.mainDao.selectName2(map);
  }
  
  @Override  

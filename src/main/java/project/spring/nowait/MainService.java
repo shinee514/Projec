@@ -11,7 +11,13 @@ public interface MainService {
 	
 	String insertRv(Map<String, Object> map);
 	
+	Map<String, Object> num(Map<String, Object> map);
+	
+	String insertNum(Map<String, Object> map);
+	
 	Map<String, Object> name(Map<String, Object> map);
+	
+	Map<String, Object> name2(Map<String, Object> map);
 	
 	List<Map<String, Object>> listPopCh(Map<String, Object> map);
 	

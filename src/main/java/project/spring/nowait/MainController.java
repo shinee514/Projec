@@ -102,6 +102,43 @@ MainService mainService;
 	    return mav;
 	}
 	
+	@RequestMapping(value = "/num", method = RequestMethod.GET)
+	public ModelAndView numName(@RequestParam Map<String, Object> map) {
+	    Map<String, Object> nameMap = this.mainService.name2(map);
+
+	    ModelAndView mav = new ModelAndView();
+	    mav.addObject("data", nameMap);
+	    String resId = map.get("resId").toString();
+	    mav.addObject("resId", resId);
+	    mav.setViewName("/nowait/num");
+	    return mav;
+	}
+	
+	@RequestMapping(value = "/num", method = RequestMethod.POST)
+	public ModelAndView numPost(@RequestParam Map<String, Object> map) {
+		ModelAndView mav = new ModelAndView();
+
+	    String numId = this.mainService.insertNum(map);
+	    if (numId == null) {
+	        mav.setViewName("redirect:/num");
+	    }else {
+	        mav.setViewName("redirect:/numcf?numId=" + numId); 
+	    }  
+	    return mav;
+	}
+	
+	@RequestMapping(value = "/numcf", method = RequestMethod.GET)
+	public ModelAndView num(@RequestParam Map<String, Object> map) {
+	    Map<String, Object> numMap = this.mainService.num(map);
+
+	    ModelAndView mav = new ModelAndView();
+	    mav.addObject("numData", numMap);
+	    String numId = map.get("numId").toString();
+	    mav.addObject("numId", numId);
+	    mav.setViewName("/nowait/numcf");
+	    return mav;
+	}
+	
 	@RequestMapping(value = "/popgd", method = RequestMethod.GET)
 	public ModelAndView listPopCh(@RequestParam Map<String, Object> map) {  
 

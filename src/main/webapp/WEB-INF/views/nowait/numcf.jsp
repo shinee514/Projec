@@ -34,36 +34,12 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
-			<ul class="detailnav1">
-				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
-				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
-			</ul>
-			<img class="reslogo"
-				src="${path}/resources/images/${ data.res_logo }" width="400"
-				height="250"> <img class="res1"
-				src="${path}/resources/images/${ data.res_logo1 }" width="200"
-				height="120"> <img class="res2"
-				src="${path}/resources/images/${ data.res_logo2 }" width="200"
-				height="120"> <img class="resmap"
-				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350">
-			<p class="text1">${ data.res_name }</p>
-			<p class="text2">${ data.res_kind }</p>
-			<p class="text3">${ data.res_addr }</p>
-			<form action=''>
-				<input id="detailinput" type='button' value="예약페이지로"
-					onclick="location.href='/rv?resId=${ data.res_id }'" />
-
-			</form>
 			
-			<form action=''>
-				<input type='button' value="원격줄서기"
-					onclick="location.href='/num?resId=${ data.res_id }'" />
-
-			</form>
+			<h2>줄서기 완료</h2>
+	<h1>번호표 : ${ numData.num_id } </h1><br>
+	예약자 성함 : ${ numData.cust_name }<br>
+	예약 식당 : ${ numData.res_name }<br>
 			
-		</section>
-
 		<footer id="mainfooter">
 			<hr width="100%">
 

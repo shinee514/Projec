@@ -355,7 +355,7 @@ function execPostCode() {
 	<section id='mainsection'>
 <header>
 <a href="/first"> 
-	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
+	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
 </a>
 </header>
 	<nav>
