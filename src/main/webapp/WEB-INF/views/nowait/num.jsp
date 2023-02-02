@@ -26,14 +26,11 @@
 			<nav>
 				<ul class="nav-1">
 					<li class="nav-item1"><a href="/login">Login</a></li>
-					<li class="nav-item1"><a href="">My Page</a></li>
+					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
-					<li class="nav-item1"><a href="">QnA</a></li>
+					<li class="nav-item1"><a href="/qna">QnA</a></li>
 				</ul>
 			</nav>
-			<c:if test="${nowait != null }">
-				<p>${nowait.cust_name}님 환영합니다.</p>
-			</c:if>
 			<nav>
 				<ul class="nav-2">
 					<li class="nav-item2"><a href="/rev">원격 줄서기/예약</a></li>
@@ -59,7 +56,6 @@
 						</p>
 
 			<ul class="footBtwrap clearfix">
-
 				<li><button type="submit" onClick="return check()" class="fpmgBt2">원격줄서기</button></li>
 			</ul>
 		</form>

@@ -25,9 +25,9 @@
 			<nav>
 				<ul class="nav-1">
 					<li class="nav-item1"><a href="/login">Login</a></li>
-					<li class="nav-item1"><a href="">My Page</a></li>
+					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
-					<li class="nav-item1"><a href="">QnA</a></li>
+					<li class="nav-item1"><a href="/qna">QnA</a></li>
 				</ul>
 			</nav>
 			<nav>
@@ -95,14 +95,10 @@
 								<li class="checkBtn"><input type="checkbox" name="rv_chk3" style="width: 40px; height:20px;" onchange="YnCheck(this);">
 								</li>
 							</ul>
-
-
-
 						</li>
 				</li>
 			</ul>
 			<ul class="footBtwrap clearfix">
-
 				<li><button type="submit" onClick="return check()" class="fpmgBt2">예약하기</button></li>
 			</ul>
 		</form>

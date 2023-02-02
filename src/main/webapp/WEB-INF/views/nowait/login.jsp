@@ -30,14 +30,14 @@
    <img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
 </a>
 </header>
-   <nav>
-      <ul class="nav-1">
-         <li class="nav-item1"> <a href="/login">Login</a></li>
-         <li class="nav-item1"> <a href="">My Page</a></li>
-         <li class="nav-item1"> <a href="/signup">Join</a></li>
-         <li class="nav-item1"> <a href="">QnA</a></li>
-      </ul>
-   </nav>
+			<nav>
+				<ul class="nav-1">
+					<li class="nav-item1"><a href="/login">Login</a></li>
+					<li class="nav-item1"><a href="/mypage">My Page</a></li>
+					<li class="nav-item1"><a href="/signup">Join</a></li>
+					<li class="nav-item1"><a href="/qna">QnA</a></li>
+				</ul>
+			</nav>
    <nav>
       <ul class="nav-2">
          <li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
@@ -73,10 +73,6 @@
   </div>
 <c:if test="${msg == false}">
    <p style="color:#f00;">로그인에 실패했습니다. 아이디 또는 패스워드를 다시 입력해주세요.</p>
-</c:if>
-
-<c:if test="${nowait != null }">
-   <p>${nowait.cust_name}님 환영합니다.</p>
 </c:if>
 
   </form>

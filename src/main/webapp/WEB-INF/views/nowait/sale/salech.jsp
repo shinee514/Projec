@@ -32,16 +32,16 @@ ul {
     		</c:if>
    		</div>
 			<header>
-				<a href="/main"> <img src="${path}/resources/images/logo2.png"
+				<a href="/first"> <img src="${path}/resources/images/logo2.png"
 					alt="My Image" width="200" height="150">
 				</a>
 			</header>
 			<nav>
 				<ul class="nav-1">
-			<li class="nav-item1"> <a href="/login">Login</a></li>
-			<li class="nav-item1"> <a href="">My Page</a></li>
-			<li class="nav-item1"> <a href="/signup">Join</a></li>
-			<li class="nav-item1"> <a href="">QnA</a></li>
+					<li class="nav-item1"><a href="/login">Login</a></li>
+					<li class="nav-item1"><a href="/mypage">My Page</a></li>
+					<li class="nav-item1"><a href="/signup">Join</a></li>
+					<li class="nav-item1"><a href="/qna">QnA</a></li>
 				</ul>
 			</nav>
 			<nav>

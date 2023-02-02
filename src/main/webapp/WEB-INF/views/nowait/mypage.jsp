@@ -346,9 +346,9 @@ function execPostCode() {
 										   </c:if></li>
 					<li class="nav-item1"> <c:if test="${nowait != null}"><a href="">logout</a></c:if></li>
 					<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">login</a></c:if></li>
-					<li class="nav-item1"> <a href="">My Page</a></li>
+					<li class="nav-item1"> <a href="/mypage">My Page</a></li>
 					<li class="nav-item1"> <a href="/signup">Join</a></li>
-					<li class="nav-item1"> <a href="">QnA</a></li>
+					<li class="nav-item1"> <a href="/qna">QnA</a></li>
 		</ul>
 	</nav>
 	<nav>

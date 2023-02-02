@@ -647,3 +647,35 @@ h2 {
 .list_table tbody td { 
 	text-align: center;  border-bottom: 1px solid #e5e5e5; padding: 5px 0; 
 }
+
+//예약확인페이지
+.member_rvComplete { 
+	border:1px solid #e9e9e9; padding:30px 0; line-height:150%; text-align:center;
+}
+.member_rvComplete .rvComplete { 
+	width:430px; margin:0 auto; 
+}
+.member_rvComplete .rvComplete .desc { 
+	margin:0 0 30px; font-size:20px; color:#008bcc; font-weight:bold;
+}
+.member_rvComplete .rvComplete .memberInfo { 
+	overflow:hidden; border:1px solid #d6d4d4; text-align:left; 
+}
+.member_rvComplete .rvComplete .memberInfo .info { 
+	padding:10px 0 10px 35px; border-bottom:1px solid #e8e7e7; 	
+}
+.member_rvComplete .rvComplete .memberInfo .thumb { 
+	float:left; padding:10px;
+}
+.member_rvComplete .rvComplete .memberInfo ul { 
+	float:left; width:318px; padding:10px; 
+}
+.member_rvComplete .rvComplete .memberInfo li { 
+	margin:0 0 4px; 
+}
+.member_rvComplete .rvComplete .memberInfo li strong { 
+	padding:0 0 0 10px; width:60px; color:#2e2e2e; font-weight:bold;	 
+}
+.member_rvComplete .rvComplete .button { 
+	margin:30px 0 0;
+ }

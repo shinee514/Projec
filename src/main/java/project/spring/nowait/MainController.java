@@ -40,6 +40,19 @@ MainService mainService;
 	public ModelAndView Sale() {
 	    return new ModelAndView("nowait/sale");
 	}
+	@RequestMapping(value="/qna", method = RequestMethod.GET)
+	public ModelAndView Qna() {
+	    return new ModelAndView("nowait/qna");
+	}
+	@RequestMapping(value="/pass", method = RequestMethod.GET)
+	public ModelAndView Pass() {
+	    return new ModelAndView("nowait/pass");
+	}
+	@RequestMapping(value="/write", method = RequestMethod.GET)
+	public ModelAndView Write() {
+	    return new ModelAndView("nowait/write");
+	}
+
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
 	public ModelAndView detail(@RequestParam Map<String, Object> map) {

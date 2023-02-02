@@ -22,14 +22,14 @@
 	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
 </a>
 </header>
-	<nav>
-		<ul class="nav-1">
-			<li class="nav-item1"> <a href="/login">Login</a></li>
-			<li class="nav-item1"> <a href="">My Page</a></li>
-			<li class="nav-item1"> <a href="/signup">Join</a></li>
-			<li class="nav-item1"> <a href="">QnA</a></li>
-		</ul>
-	</nav>
+			<nav>
+				<ul class="nav-1">
+					<li class="nav-item1"><a href="/login">Login</a></li>
+					<li class="nav-item1"><a href="/mypage">My Page</a></li>
+					<li class="nav-item1"><a href="/signup">Join</a></li>
+					<li class="nav-item1"><a href="/qna">QnA</a></li>
+				</ul>
+			</nav>
 	<nav>
 		<ul class="nav-2">
 			<li class="nav-item2"> <a href="/rev">원격 줄서기/예약</a></li>
@@ -38,17 +38,28 @@
 		</ul>
 	</nav>
 	</section>
-	
-	<h2>예약 완료</h2>
-	예약번호 : ${ rvData.rv_id }<br>
-	예약자 성함 : ${ rvData.cust_name }<br>
-	예약 식당 : ${ rvData.res_name }<br>
-	예약 날짜 : ${ rvData.rv_date }<br>
-	예약 시간 : ${ rvData.rv_time }<br>
-	예약 인원수 : ${ rvData.rv_cnt }<br>
-	
-	
-	
+	<div class="member_rvComplete">
+    <div class="rvComplete">
+        <p class="desc"><h2>예약이 완료 되었습니다.</h2></p>
+        <br/>
+        <div class="memberInfo">       
+            <ul>
+                <li><strong>> 예약번호: </strong><span>${ rvData.rv_id }</span></li>
+                <li><strong>> 예약자 성함: </strong><span>${ rvData.cust_name }</span></li>
+                <li><strong>> 예약 식당: </strong><span>${ rvData.res_name }</span></li>
+                <li><strong>> 예약 날짜: </strong><span>${ rvData.rv_date }</span></li>
+                <li><strong>> 예약 시간: </strong><span>${ rvData.rv_time }</span></li>
+                <li><strong>> 인원 수: </strong><span>${ rvData.rv_cnt }</span></li>
+            </ul>
+        </div>
+        <br/>
+        <p class="button2">
+            <a href="/login"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_complete_login.gif" alt="로그인" /></a>
+            <a href="/first"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_complete_main.gif" alt="메인으로 이동" /></a>
+        </p>
+    </div>
+</div>
+
 	<footer id='mainfooter'>
 		<hr width="100%">
 		<nav>
