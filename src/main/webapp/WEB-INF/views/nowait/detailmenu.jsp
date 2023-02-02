@@ -45,24 +45,62 @@
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
 			</ul>
-			<img class="reslogo"
-				src="${path}/resources/images/${ data.res_logo }" width="400"
-				height="250"> <img class="res1"
-				src="${path}/resources/images/${ data.res_logo1 }" width="200"
-				height="120"> <img class="res2"
-				src="${path}/resources/images/${ data.res_logo2 }" width="200"
-				height="120"> <img class="resmap"
-				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350">
-			<p class="text1">${ data.res_name }</p>
-			<p class="text2">${ data.res_kind }</p>
-			<p class="text3">${ data.res_addr }</p>
+			
+			<ul class="menubox">
+				<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu1"
+							src="${path}/resources/images/${ data.res_menu1 }">
+					</div>
+				</li>
+				<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu2"
+							src="${path}/resources/images/${ data.res_menu2 }">
+					</div>
+				</li>
+							<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu3"
+							src="${path}/resources/images/${ data.res_menu3 }">
+					</div>
+				</li>
+									<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu4"
+							src="${path}/resources/images/${ data.res_menu4 }">
+					</div>
+				</li>
+					<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu5"
+							src="${path}/resources/images/${ data.res_menu5 }">
+					</div>
+				</li>
+					<li class="menusubbox">
+					<div class="subbbox">
+					<img class="resmenu6"
+							src="${path}/resources/images/${ data.res_menu6 }">
+					</div>
+				</li>
+			
+			
+			</ul>
+			
 			<form action=''>
 				<input id="detailinput" type='button' value="예약페이지로"
 					onclick="location.href='/rv?resId=${ data.res_id }'" />
 
 			</form>
+			
+			<form action=''>
+				<input id="detailinput2" type='button' value="원격줄서기"
+					onclick="location.href='/num?resId=${ data.res_id }'" />
+
+			</form>
+			
 		</section>
+			</div>
 
 		<footer id="mainfooter">
 			<hr width="100%">
@@ -77,6 +115,5 @@
 			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
 				nowait All rights reserved.</span>
 		</footer>
-	</div>
 </body>
 </html>

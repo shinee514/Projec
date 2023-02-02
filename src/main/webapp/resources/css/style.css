@@ -45,21 +45,14 @@
 
 #mainwrap {
 	min-height: 100vh;
-	porition: relative;
+	position: relative;
 	width: 100%;
 }
 
-#mainfooter {
-	width: 100%;
-	height: 0px;
-	bottom: -300px;
-	position: absolute;
-	
-}
 footer {
 	width: 100%;
 	height: 90px;
-	bottom: 0px;
+	bottom: -600px;
 	position: absolute;
 	padding-top: 15px;
 	color: #808080;
@@ -287,7 +280,7 @@ footer nav{
 #detailinput{
 	position: absolute;
     left: 1100px;
-    top: 1100px;
+    top: 1350px;
     background: #606060;
   	color: #fff;
   	line-height: 42px;
@@ -297,7 +290,7 @@ footer nav{
 #detailinput2{
 	position: absolute;
     left: 1250px;
-    top: 1100px;
+    top: 1350px;
     background: #606060;
   	color: #fff;
   	line-height: 42px;
@@ -530,6 +523,99 @@ h2 {
 .res_name{
 	font-size: 30px;
 }
+
+/*cc*/
+
+.detailnav1 {
+	display: block;
+	margin-top: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	font-size: 35px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.detailnav1>a {
+	margin-left: 0px;
+}
+
+.detailnav1>a {
+	color: #800080;
+}
+
+.menubox {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 500px;
+	margin-top: 70px;
+}
+
+.menubox .menusubbox {
+	width: 48%;
+	margin-bottom: -5px;
+}
+
+.logo {
+	margin-top: 30px;
+	width: 10%;
+	height: 100px;
+	margin-left: 250px;
+}
+
+.logobox {
+	width: 1400px;
+	height: 300px;
+	margin-bottom: 30px;
+}
+
+.logobox img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo12box {
+	display: flex;
+	margin-left: 30px;
+}
+
+.logo12box li:nth-child(1) {
+	width: 500px;
+	height: 500px;
+	margin-top: 200px;
+}
+
+.logo12box li:nth-child(2) {
+	width: 500px;
+	height: 500px;
+	margin-top: 200px;
+	margin-left: 36px;
+}
+
+.logo12box li:nth-child(1) img {
+	width: 100%;
+	height: 100%;
+}
+
+.logo12box li:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+
+.mapbox {
+	width: 730px;
+	margin-left: 1140px;
+	margin-top: -495px;
+}
+
+.msubbox img {
+	width: 100%;
+	height: 100%;
+}
+
 
 //QnA게시판
 #boardcss_list_add_button_table { 

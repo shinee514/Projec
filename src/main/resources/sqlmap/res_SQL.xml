@@ -20,7 +20,13 @@
         res_logo,
         res_logo1,
         res_logo2,
-        res_map
+        res_map,
+        res_menu1,
+        res_menu2,
+        res_menu3,
+        res_menu4,
+        res_menu5,
+        res_menu6
         from
         res
         where

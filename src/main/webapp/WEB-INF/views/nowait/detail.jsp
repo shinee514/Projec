@@ -45,18 +45,23 @@
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
 			</ul>
-			<img class="reslogo"
-				src="${path}/resources/images/${ data.res_logo }" width="400"
-				height="250"> <img class="res1"
-				src="${path}/resources/images/${ data.res_logo1 }" width="200"
-				height="120"> <img class="res2"
-				src="${path}/resources/images/${ data.res_logo2 }" width="200"
-				height="120"> <img class="resmap"
-				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350">
-			<p class="text1">${ data.res_name }</p>
-			<p class="text2">${ data.res_kind }</p>
-			<p class="text3">${ data.res_addr }</p>
+			<ul class="logobox">
+				<img class="logo" src="${path}/resources/images/${ data.res_logo }">
+			</ul>
+
+			<ul class="logo12box">
+				<li class="lsubbox">
+					
+					<img class="logo1" src="${path}/resources/images/${ data.res_logo1 }">
+				</li>
+				<li class="lsubbox"><img class="logo2"
+					src="${path}/resources/images/${ data.res_logo2 }"></li>
+			</ul>
+			<ul class="mapbox">
+				<li class="msubbox"><img class="map"
+					src="${path}/resources/images/${ data.res_map }"></li>
+			</ul>
+			
 			<form action=''>
 				<input id="detailinput" type='button' value="예약페이지로"
 					onclick="location.href='/rv?resId=${ data.res_id }'" />
@@ -70,7 +75,7 @@
 			</form>
 			
 		</section>
-
+		</div>
 		<footer id="mainfooter">
 			<hr width="100%">
 
@@ -84,6 +89,5 @@
 			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
 				nowait All rights reserved.</span>
 		</footer>
-	</div>
 </body>
 </html>

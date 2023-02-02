@@ -31,9 +31,6 @@
 					<li class="nav-item1"><a href="">QnA</a></li>
 				</ul>
 			</nav>
-			<c:if test="${nowait != null }">
-				<p>${nowait.cust_name}님 환영합니다.</p>
-			</c:if>
 			<nav>
 				<ul class="nav-2">
 					<li class="nav-item2"><a href="/rev">원격 줄서기/예약</a></li>
