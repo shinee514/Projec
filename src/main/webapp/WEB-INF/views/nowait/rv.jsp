@@ -38,17 +38,17 @@
 					<ul class="clearfix">
 						<h2>예약 신청서</h2>
 						<p class="rvservcice">
-							음식점명 : <input value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							음식점명 : <input required value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 
 						<p class="rvservcice">
-							예약자 성함 : <input value="${nowait.cust_name}" name="cust_name" readonly style="width: 120px; height:30px; font-size:15px; border:none;"	/>
+							예약자 성함 : <input required value="${nowait.cust_name}" name="cust_name" readonly style="width: 120px; height:30px; font-size:15px; border:none;"	/>
 						</p>
 						<p class="rvservcice">
-							예약날짜 : <input type="date" name="rv_date" style="width: 120px; height:30px; font-size:15px;"/>
+							예약날짜 : <input required type="date" name="rv_date" style="width: 120px; height:30px; font-size:15px;"/>
 						</p>
 						<p class="rvservcice">
-							예약시간 : <input type="time" name="rv_time" style="width: 120px; height:30px; font-size:15px;"/>
+							예약시간 : <input required type="time" name="rv_time" style="width: 120px; height:30px; font-size:15px;"/>
 						<p class="rvservcice">
 							예약 인원수 : <select name="rv_cnt" size="1" style="width: 60px; height:30px; font-size:15px;">
 								<option value="1명">1명</option>
@@ -73,7 +73,7 @@
 				<li class="checkBox check03">
 					<ul class="clearfix">
 						<li>개인정보 수집 및 이용에 대한 안내(필수)</li>
-						<li class="checkBtn"><input type="checkbox" name="rv_chk2" style="width: 40px; height:20px;" onchange="YnCheck(this);">
+						<li class="checkBtn"><input required type="checkbox" name="rv_chk2" style="width: 40px; height:20px;" onchange="YnCheck(this);">
 						</li>
 					</ul> <textarea name="" id="">                                                     여러분을 환영합니다.
   노웨이트 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 노웨이트의 이용과 관련하여 노웨이트 서비스를 제공하는 노웨이트와 이를 이용하는 노웨이트 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 노웨이트 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.

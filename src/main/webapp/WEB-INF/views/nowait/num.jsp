@@ -38,15 +38,15 @@
 			<form action="" id="joinForm" method="POST">
 			
 						<p class="rvservcice">
-							음식점명 : <input value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							음식점명 : <input required value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 						
 						<p class="rvservcice">
-							예약자 이름 : <input value="${ nowait.cust_name }" name="cust_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							예약자 이름 : <input required value="${ nowait.cust_name }" name="cust_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 						
 						<p class="rvservcice">
-							예약자 전화번호 : <input value="${ nowait.cust_pn }" name="cust_pn" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							예약자 전화번호 : <input required value="${ nowait.cust_pn }" name="cust_pn" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 
 			<ul class="footBtwrap clearfix">
