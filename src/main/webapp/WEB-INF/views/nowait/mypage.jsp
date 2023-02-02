@@ -329,7 +329,7 @@ function execPostCode() {
 	<section id='mainsection'>
 <header>
 <a href="/first"> 
-	<img src="${path}/resources/images/logo.png" alt="My Image" width="200" height="150">
+	<img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
 </a>
 </header>
 	<nav>
@@ -338,9 +338,9 @@ function execPostCode() {
 										   		<p>${nowait.cust_name}님 안녕하세요.</p>
 										   </c:if></li>
 					<li class="nav-item1"> <c:if test="${nowait != null}"><a href="">logout</a></c:if></li>
-					<li class="nav-item1"> <c:if test="${nowait == null}"><a href="nowait/l">login</a></c:if></li>
+					<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">login</a></c:if></li>
 					<li class="nav-item1"> <a href="">My Page</a></li>
-					<li class="nav-item1"> <a href="">Join</a></li>
+					<li class="nav-item1"> <a href="/signup">Join</a></li>
 					<li class="nav-item1"> <a href="">QnA</a></li>
 		</ul>
 	</nav>

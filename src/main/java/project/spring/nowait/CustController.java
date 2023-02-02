@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
-@RequestMapping("/nowait/*")
+@RequestMapping("/*")
 public class CustController {
 
 private static final Logger logger = LoggerFactory.getLogger(CustController.class);
