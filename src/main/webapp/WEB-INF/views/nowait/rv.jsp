@@ -10,6 +10,13 @@
 <body id='mainbody'>
 	<div id='mainwrap'>
 		<section id='mainsection'>
+		<div class="name">
+			<c:if test="${nowait != null }">
+    		<p style="font-size: 12px; font-family: sans-serif; margin-right: 10px; float: right;">
+    		${nowait.cust_name}님 환영합니다.
+    		</p>
+    		</c:if>
+   		</div>
 			<header>
 				<a href="/first"> <img src="${path}/resources/images/logo2.png"
 					alt="My Image" width="200" height="150">

@@ -48,6 +48,13 @@ function decrypt(pwd) {
 </head>
 <body>
 <section id="mainsection">
+		<div class="name">
+			<c:if test="${nowait != null }">
+    		<p style="font-size: 12px; font-family: sans-serif; margin-right: 10px; float: right;">
+    		${nowait.cust_name}님 환영합니다.
+    		</p>
+    		</c:if>
+   		</div>
 			<header>
 				<a href="/main"> <img src="${path}/resources/images/logo2.png"
 					alt="My Image" width="200" height="150">
