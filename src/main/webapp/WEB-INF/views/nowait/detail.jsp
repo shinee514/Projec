@@ -34,6 +34,9 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
+			<div class="pagetitle">
+				<h1>상세페이지</h1>
+			</div>
 			<ul class="detailnav1">
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>

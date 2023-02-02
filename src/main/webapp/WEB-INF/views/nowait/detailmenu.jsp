@@ -34,11 +34,13 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
+			<div class="pagetitle">
+				<h1>메뉴페이지</h1>
+			</div>
 			<ul class="detailnav1">
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
 			</ul>
-			<h1>메뉴</h1>
 			<img class="reslogo"
 				src="${path}/resources/images/${ data.res_logo }" width="400"
 				height="250"> <img class="res1"
@@ -47,8 +49,7 @@
 				src="${path}/resources/images/${ data.res_logo2 }" width="200"
 				height="120"> <img class="resmap"
 				src="${path}/resources/images/${ data.res_map }" width="600"
-				height="350"> <img class="resmenu"
-				src="${path}/resources/images/${ data.res_menu }">
+				height="350">
 			<p class="text1">${ data.res_name }</p>
 			<p class="text2">${ data.res_kind }</p>
 			<p class="text3">${ data.res_addr }</p>
