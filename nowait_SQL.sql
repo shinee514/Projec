@@ -28,8 +28,7 @@ create table res(
     res_menu3 VARCHAR(50) NOT NULL,
     res_menu4 VARCHAR(50) NOT NULL,
     res_menu5 VARCHAR(50) NOT NULL,
-    res_menu6 VARCHAR(50) NOT NULL,
-    res_menu7 VARCHAR(50) NOT NULL
+    res_menu6 VARCHAR(50) NOT NULL
 )
 COLLATE='utf8mb4_general_ci'
 ;
