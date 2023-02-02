@@ -48,7 +48,7 @@
                 
                 <article class="container">
             <div class="col-sm-6 col-md-offset-3">
-                <form action="/nowait/login" method="post" role="form" autocomplete="off">
+                <form action="/login" method="post" role="form" autocomplete="off">
                <div class="form-group">
                         <label for="id">아이디</label>
                         <input type="text" class="form-control" id="cust_id" name="cust_id" placeholder="ID">

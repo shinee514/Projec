@@ -42,16 +42,18 @@
 						</p>
 						
 						<p class="rvservcice">
-							예약자 이름 : <input required value="${ nowait.cust_name }" name="cust_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							예약자 이름 : <input value="${ nowait.cust_name }" name="cust_name" readonly
+							 style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 						
 						<p class="rvservcice">
-							예약자 전화번호 : <input required value="${ nowait.cust_pn }" name="cust_pn" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
+							예약자 전화번호 : <input value="${ nowait.cust_pn }" name="cust_pn" readonly
+							 style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 
 			<ul class="footBtwrap clearfix">
 
-				<li><button class="fpmgBt2">원격줄서기</button></li>
+				<li><button type="submit" onClick="return check()" class="fpmgBt2">원격줄서기</button></li>
 			</ul>
 		</form>
 			
@@ -70,4 +72,12 @@
 		</footer>
 	</div>
 </body>
+<script>
+function check(){
+if(joinForm.cust_name.value.length == 0){
+	alert("로그인 후 이용가능합니다.");
+	return false;
+}
+}
+</script>
 </html>

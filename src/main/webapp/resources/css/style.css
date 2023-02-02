@@ -294,6 +294,16 @@ footer nav{
   	padding: 0;
   	border: none;
 }
+#detailinput2{
+	position: absolute;
+    left: 1250px;
+    top: 1100px;
+    background: #606060;
+  	color: #fff;
+  	line-height: 42px;
+  	padding: 0;
+  	border: none;
+}
 #detailinput:hover {
   background: transparent;
   color: #000;
@@ -322,6 +332,37 @@ footer nav{
 }
 #detailinput:hover:before,
 #detailinput:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+#detailinput2:hover {
+  background: transparent;
+  color: #000;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+}
+#detailinput2:before,
+#detailinput2:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #000;
+  transition:400ms ease all;
+}
+#detailinput2:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#detailinput:hover2:before,
+#detailinput:hover2:after{
   width:100%;
   transition:800ms ease all;
 }

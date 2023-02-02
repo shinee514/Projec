@@ -57,7 +57,7 @@
 			</form>
 			
 			<form action=''>
-				<input type='button' value="원격줄서기"
+				<input id="detailinput2" type='button' value="원격줄서기"
 					onclick="location.href='/num?resId=${ data.res_id }'" />
 
 			</form>

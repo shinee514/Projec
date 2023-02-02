@@ -96,7 +96,7 @@
 			</ul>
 			<ul class="footBtwrap clearfix">
 
-				<li><button class="fpmgBt2">예약하기</button></li>
+				<li><button type="submit" onClick="return check()" class="fpmgBt2">예약하기</button></li>
 			</ul>
 		</form>
 
@@ -130,5 +130,12 @@ if(checked){
 	obj.value="N";
 }
 };
+
+function check(){
+	if(joinForm.cust_name.value.length == 0){
+		alert("로그인 후 이용가능합니다.");
+		return false;
+	}
+	}
 </script>
 </html>
