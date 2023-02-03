@@ -41,14 +41,14 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
-			
+			<h1>자주 묻는 질문 & 답변</h1>
 			<div class="faq">
     <div class="faqHeader">
         <!--button type="button" class="showAll">답변 모두 여닫기</button-->
     </div>
     <ul class="faqBody">
         <li class="article" id="a1">
-            <p class="q"><a href="#a1">고객센터의 상담 시간을 알고 싶어요.</a></p>
+            <p class="q"><a href="#a1">Q. 고객센터의 상담 시간을 알고 싶어요.</a></p>
             <p class="a">
             - 고객센터 전화번호 : 1234-1234<br>
 			- 상담 시간 : 평일 오전 9시 30분 ~ 오후 6시 (점심시간 : 오전 11시 30분 ~ 오후 1시 30분 / 주말, 공휴일 휴무)<br>
@@ -56,12 +56,20 @@
             </p>
         </li>
         <li class="article" id="a2">
-            <p class="q"><a href="#a2">질문2</a></p>
-            <p class="a">답변2</p>
+            <p class="q"><a href="#a2">
+            Q. 예약을 취소 하고 싶어요!
+            </a></p>
+            <p class="a">
+            - 예약 당일 취소를 원하시는 고객님께서는 사이트에서 취소 요청을 해주신 뒤, 고객센터(1234-1234)로 문의하여 취소 접수를 부탁드립니다.
+            </p>
         </li>
         <li class="article" id="a3">
-            <p class="q"><a href="#a3">질문3</a></p>
-            <p class="a">답변3</p>
+            <p class="q"><a href="#a3">
+            Q. 원격 줄서기를 취소하고 싶어요!
+            </a></p>
+            <p class="a">
+            - 원격 줄서기 취소를 원하시는 고객님께서는 해당 매장에 문의하여 주시길 바랍니다.
+            </p>
         </li>
     </ul>
 </div>
