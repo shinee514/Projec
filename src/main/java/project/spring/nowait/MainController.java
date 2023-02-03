@@ -52,6 +52,10 @@ MainService mainService;
 	public ModelAndView Write() {
 	    return new ModelAndView("nowait/write");
 	}
+	@RequestMapping(value="/faq", method = RequestMethod.GET)
+	public ModelAndView Faq() {
+	    return new ModelAndView("nowait/faq");
+	}
 
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)

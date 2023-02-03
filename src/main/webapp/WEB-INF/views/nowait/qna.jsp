@@ -32,7 +32,7 @@
 					<li class="nav-item1"><a href="/login">Login</a></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
-					<li class="nav-item1"><a href="/qna">QnA</a></li>
+					<li class="nav-item1"><a href="/faq">FAQ</a></li>
 				</ul>
 			</nav>
 			<nav>
