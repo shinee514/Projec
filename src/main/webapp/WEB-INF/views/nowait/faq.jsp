@@ -48,8 +48,12 @@
     </div>
     <ul class="faqBody">
         <li class="article" id="a1">
-            <p class="q"><a href="#a1">질문1</a></p>
-            <p class="a">답변1</p>
+            <p class="q"><a href="#a1">고객센터의 상담 시간을 알고 싶어요.</a></p>
+            <p class="a">
+            - 고객센터 전화번호 : 1234-1234<br>
+			- 상담 시간 : 평일 오전 9시 30분 ~ 오후 6시 (점심시간 : 오전 11시 30분 ~ 오후 1시 30분 / 주말, 공휴일 휴무)<br>
+			※ 문의량이 많을 경우 상담 연결 및 답변이 지연될 수 있습니다.
+            </p>
         </li>
         <li class="article" id="a2">
             <p class="q"><a href="#a2">질문2</a></p>

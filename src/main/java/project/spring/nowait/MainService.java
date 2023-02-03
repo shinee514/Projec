@@ -19,6 +19,10 @@ public interface MainService {
 	
 	Map<String, Object> name2(Map<String, Object> map);
 	
+	boolean removeRv(Map<String, Object> map);  
+	
+	boolean removeNum(Map<String, Object> map);  
+	
 	List<Map<String, Object>> listPopCh(Map<String, Object> map);
 	
 	List<Map<String, Object>> listPopJs(Map<String, Object> map);

@@ -44,8 +44,19 @@ public class MainServiceImpl implements MainService {
          return map.get("num_id").toString();
      }
      return null;
-
  }
+ 
+ @Override  
+ public boolean removeRv(Map<String, Object> map) {  
+ int affectRowCount = this.mainDao.deleteRv(map);  
+ return affectRowCount == 1;  
+ }  
+ 
+ @Override  
+ public boolean removeNum(Map<String, Object> map) {  
+ int affectRowCount = this.mainDao.deleteNum(map);  
+ return affectRowCount == 1;  
+ }  
  
  @Override
  public Map<String, Object> name(Map<String, Object> map){

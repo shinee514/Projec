@@ -42,7 +42,14 @@
 			<h2>줄서기 완료</h2>
 	<h1>번호표 : ${ numData.num_id } </h1><br>
 	예약자 성함 : ${ numData.cust_name }<br>
-	예약 식당 : ${ numData.res_name }<br>
+	예약 식당 : ${ numData.res_name }<br><br>
+	입장 30분전 해당 매장에서 연락할 예정입니다.<br><br>
+	
+	    <form method="POST" action="/numc">
+   			<input type="hidden" name="numId" value="${numId}" />
+   			<input type="submit" onClick="return check()" value="원격줄서기취소" />
+  		</form>
+	
 			
 		<footer id="mainfooter">
 			<hr width="100%">
@@ -59,4 +66,9 @@
 		</footer>
 	</div>
 </body>
+<script type="text/javascript">
+function check(){
+		alert("원격 줄서기가 취소되었습니다.");
+	}
+</script>
 </html>

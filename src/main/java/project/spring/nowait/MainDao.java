@@ -32,6 +32,14 @@ public class MainDao {
 public int insertNum(Map<String, Object> map) {
 	  return this.sqlSessionTemplate.insert("num.insert", map);
 	}
+
+public int deleteRv(Map<String, Object> map) {  
+		return this.sqlSessionTemplate.delete("rv.delete", map);  
+	}  
+
+public int deleteNum(Map<String, Object> map) {  
+	return this.sqlSessionTemplate.delete("num.delete", map);  
+}  
  
 
  public Map<String, Object> selectName(Map<String, Object> map) {

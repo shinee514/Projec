@@ -54,9 +54,13 @@
         </div>
         <br/>
         <p class="button2">
-            <a href="/login"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_complete_login.gif" alt="로그인" /></a>
+         <form method="POST" action="/rvc">
+   			<input type="hidden" name="rvId" value="${rvId}" />
+   			<input type="submit" onClick="return check()" value="예약취소" />
+  		</form>
             <a href="/first"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/member/btn_complete_main.gif" alt="메인으로 이동" /></a>
         </p>
+
     </div>
 </div>
 
@@ -73,4 +77,9 @@
 	</footer>
 	</div>
 </body>
+<script type="text/javascript">
+function check(){
+		alert("예약이 취소되었습니다.");
+	}
+</script>
 </html>

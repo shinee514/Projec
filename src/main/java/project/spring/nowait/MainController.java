@@ -119,6 +119,21 @@ MainService mainService;
 	    return mav;
 	}
 	
+	@RequestMapping(value = "/rvc", method = RequestMethod.POST)  
+	public ModelAndView deleteRv(@RequestParam Map<String, Object> map) {  
+	ModelAndView mav = new ModelAndView();  
+
+	boolean isDeleteSuccess = this.mainService.removeRv(map);  
+	if (isDeleteSuccess) {  
+	mav.setViewName("redirect:/rev");  
+	}else {  
+	String rvId = map.get("rvId").toString();  
+	mav.setViewName("redirect:/rvcf?rvId=" + rvId);  
+	}  
+
+	return mav;  
+	}  
+	
 	@RequestMapping(value = "/num", method = RequestMethod.GET)
 	public ModelAndView numName(@RequestParam Map<String, Object> map) {
 	    Map<String, Object> nameMap = this.mainService.name2(map);
@@ -155,6 +170,21 @@ MainService mainService;
 	    mav.setViewName("/nowait/numcf");
 	    return mav;
 	}
+	
+	@RequestMapping(value = "/numc", method = RequestMethod.POST)  
+	public ModelAndView deleteNum(@RequestParam Map<String, Object> map) {  
+	ModelAndView mav = new ModelAndView();  
+
+	boolean isDeleteSuccess = this.mainService.removeNum(map);  
+	if (isDeleteSuccess) {  
+	mav.setViewName("redirect:/rev");  
+	}else {  
+	String numId = map.get("numId").toString();  
+	mav.setViewName("redirect:/numcf?numId=" + numId);
+	}  
+
+	return mav;  
+	}  
 	
 	@RequestMapping(value = "/popgd", method = RequestMethod.GET)
 	public ModelAndView listPopCh(@RequestParam Map<String, Object> map) {  

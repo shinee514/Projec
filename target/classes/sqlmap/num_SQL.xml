@@ -25,4 +25,14 @@
     ]]>
 </select>
 
+<delete id="delete" parameterType="hashMap">  
+<![CDATA[  
+	delete 
+	from 
+	num  
+	where  
+	num_id = #{numId}  
+]]>  
+</delete>
+
 </mapper>
