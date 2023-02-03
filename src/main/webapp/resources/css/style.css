@@ -446,6 +446,8 @@ a {
 ul.join_box {
 	border: 1px solid #ddd;
 	background-color: #fff;
+	top: 300px;
+	position: absolute;
 }
 
 .checkBox, .checkBox>ul {

@@ -40,7 +40,6 @@
 			</nav>
 			
 			<form action="" id="joinForm" method="POST">
-			
 						<p class="rvservcice">
 							음식점명 : <input required value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
@@ -54,11 +53,11 @@
 							예약자 전화번호 : <input value="${ nowait.cust_pn }" name="cust_pn" readonly
 							 style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
-
 			<ul class="footBtwrap clearfix">
 				<li><button type="submit" onClick="return check()" class="fpmgBt2">원격줄서기</button></li>
 			</ul>
 		</form>
+
 			
 		<footer id="mainfooter">
 			<hr width="100%">

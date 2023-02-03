@@ -105,7 +105,7 @@
 
 
 
-
+	</div>
 
 		<footer id='mainfooter'>
 			<hr width="100%">
@@ -121,7 +121,6 @@
 				nowait All rights reserved.</span>
 			</p>
 		</footer>
-	</div>
 </body>
 <script type="text/javascript">
 
