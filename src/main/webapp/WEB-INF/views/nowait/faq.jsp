@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html>
 <head>
@@ -28,7 +29,8 @@
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="/login">Login</a></li>
+             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>

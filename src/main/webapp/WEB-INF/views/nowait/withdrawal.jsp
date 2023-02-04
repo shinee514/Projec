@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html id='mainhtml'>
 <head>
-<title>로그인</title>
+<title>회원탈퇴</title>
 <meta charset="UTF-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- 부트스트랩 -->
@@ -25,11 +25,11 @@
     		</p>
     		</c:if>
    		</div>
-			<header>
-				<a href="/first"> <img src="${path}/resources/images/logo2.png"
-					alt="My Image" width="200" height="150">
-				</a>
-			</header>
+<header>
+<a href="/first"> 
+   <img src="${path}/resources/images/logo2.png" alt="My Image" width="200" height="150">
+</a>
+</header>
 			<nav>
 				<ul class="nav-1">
              	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
@@ -48,16 +48,16 @@
    </nav>
    </section>
    
-	   <article class="container">
+      <article class="container">
             <div class="page-header">
                 <div class="col-6 text-center">
-                <h3>로그인</h3>
+                <h3>회원탈퇴</h3>
                 </div>
                 
                 <article class="container">
             <div class="col-sm-6 col-md-offset-3">
-                <form action="/login" method="post" role="form" autocomplete="off">
-					<div class="form-group">
+                <form method="post" role="form" autocomplete="off">
+               <div class="form-group">
                         <label for="id">아이디</label>
                         <input type="text" class="form-control" id="cust_id" name="cust_id" placeholder="ID">
                         <div class="eheck_font" id="id_check"></div>
@@ -70,20 +70,12 @@
                     </div>
                     
                      <div class="form-group text-center">
-       				<button type="submit" class="btn btn-primary">로그인</button> 
-       				</div>
-       				
-       				<div class="form-group text-center">
-       				<button class="btn btn-primary" id="login-kakao-btn" onclick="location.href='kakao'">
-       	 			카카오로 로그인하기
-					</button>
-  					</div>
-<c:if test="${msg == false}">
-	<p style="color:#f00;">로그인에 실패했습니다. 아이디 또는 패스워드를 다시 입력해주세요.</p>
-</c:if>
-
-<c:if test="${nowait != null }">
-	<p>${nowait.cust_name}님 환영합니다.</p>
+                   <button type="submit" class="btn btn-primary">회원탈퇴 확인</button> 
+  </div>
+<c:if test="${msg == false }">
+ <p>
+ 입력한 비밀번호가 잘못되었습니다.
+ </p>
 </c:if>
 
   </form>
@@ -93,19 +85,17 @@
   </div>
   </article>
    
-		<footer id="mainfooter">
-			<hr width="100%">
-
-			<a href="" target="_blank">이용약관</a> <a href="" target="_blank">개인정보
-				처리방침</a>
-			</nav>
-			<p></p>
-			<h3>
-				<span>nowait</span>
-			</h3>
-			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
-				nowait All rights reserved.</span>
-		</footer>
+<footer id="mainfooter">
+		<hr width="100%">
+		<nav>
+			<a href="" target="_blank">이용약관</a>
+			<a href="" target="_blank">개인정보 처리방침</a>
+		</nav>
+		<p></p>
+			<h3><span>nowait</span></h3><br/>
+			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
+			<span>© nowait All rights reserved.</span>
+	</footer>
    </div>
 </body>
 </html>

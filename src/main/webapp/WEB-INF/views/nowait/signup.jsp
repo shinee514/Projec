@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html id='mainhtml'>
 <head>
@@ -367,7 +368,8 @@ function execPostCode() {
 </header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="/login">Login</a></li>
+             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>
@@ -400,7 +402,7 @@ function execPostCode() {
                     
                     <div class="form-group">
                         <label for="pw">비밀번호</label>
-                        <input type="password" class="form-control" id="cust_pw" name="cust_pw" placeholder="PASSWORD">
+                        <input type="password" class="form-control" id="cust_pw" name="cust_pw" placeholder="Password">
                         <div class="eheck_font" id="pw_check"></div>
                     </div>
                     <div class="form-group">
@@ -457,17 +459,16 @@ function execPostCode() {
             </div>
         </article>
 	
-	<footer id='mainfooter'>
+	<footer id="mainfooter">
 		<hr width="100%">
 		<nav>
-			<a href="" target="_blank">Blog</a>
-			<a href="" target="_blank">Github</a>		
+			<a href="" target="_blank">이용약관</a>
+			<a href="" target="_blank">개인정보 처리방침</a>
 		</nav>
-		<p>
-			<span>1</span><br/>
-			<span>2</span><br/>
-			<span>Copyright 2023</span>
-		</p>
+		<p></p>
+			<h3><span>nowait</span></h3><br/>
+			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
+			<span>© nowait All rights reserved.</span>
 	</footer>
 	</div>
 </body>
