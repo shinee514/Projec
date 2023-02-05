@@ -81,6 +81,9 @@ function check(){
 if(joinForm.cust_name.value.length == 0){
 	alert("로그인 후 이용가능합니다.");
 	return false;
+}else{
+	alert("원격줄서기가 완료되었습니다.");
+	return true;
 }
 }
 </script>
