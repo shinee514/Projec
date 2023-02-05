@@ -338,7 +338,7 @@ VALUES ('38', '구도로통닭 서울방이점', '호프', '서울 송파구 오
 VALUES ('39', '형재에', '호프', '서울 송파구 올림픽로34길 18 1층',
  'JS_hj_h/hjlogo.png', 'JS_hj_h/hj1.png', 'JS_hj_h/hj2.png',
  'JS_hj_h/hjmap.png', 'recommend/hj.png', '호프송파', 'JS_hj_h/hjmenu1.png', 'JS_hj_h/hjmenu2.png', 'JS_hj_h/hjmenu3.png', 'JS_hj_h/hjmenu4.png'
- , 'JS_hj_h/hjmenu5.png', 'JS_hj_h/hjenu6.png');
+ , 'JS_hj_h/hjmenu5.png', 'JS_hj_h/hjmenu6.png');
  
   INSERT INTO res(res_id, res_name, res_kind, res_addr, res_logo, res_logo1, res_logo2, res_map, res_first, res_cf,
  res_menu1, res_menu2, res_menu3, res_menu4, res_menu5, res_menu6)
@@ -506,7 +506,7 @@ VALUES ('62', '하인선생', '중식', '경기 하남시 미사대로 430 1층 
  res_menu1, res_menu2, res_menu3, res_menu4, res_menu5, res_menu6)
 VALUES ('63', '정온', '중식', '경기 하남시 신평로 168번길 124',
  'MS_jo_c/jologo.png', 'MS_jo_c/jo1.png', 'MS_jo_c/jo2.png',
- 'MS_ho_c/jomap.png', 'recommend/jo.png', '중식하남', 'MS_jo_c/jomenu1.png', 'MS_jo_c/jomenu2.png', 'MS_jo_c/jomenu3.png', 'MS_jo_c/jomenu4.png'
+ 'MS_jo_c/jomap.png', 'recommend/jo.png', '중식하남', 'MS_jo_c/jomenu1.png', 'MS_jo_c/jomenu2.png', 'MS_jo_c/jomenu3.png', 'MS_jo_c/jomenu4.png'
  , 'MS_jo_c/jomenu5.png', 'MS_jo_c/jomenu6.png');
  
   INSERT INTO res(res_id, res_name, res_kind, res_addr, res_logo, res_logo1, res_logo2, res_map, res_first, res_cf,

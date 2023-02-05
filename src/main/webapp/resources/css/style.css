@@ -277,20 +277,22 @@ footer nav{
 	left : 300px;
 	top : 800px;
 }
-#detailinput{
-	position: absolute;
-    left: 1100px;
-    top: 1350px;
+#detailinput {
+    position: absolute;
+    left: 200px;
+    top: 1400px;
     background: #606060;
-  	color: #fff;
-  	line-height: 42px;
-  	padding: 0;
-  	border: none;
+    color: #fff;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    width: 400px;
 }
 #detailinput2{
+	width:400px;
 	position: absolute;
-    left: 1250px;
-    top: 1350px;
+    left: 1150px;
+    top: 1400px;
     background: #606060;
   	color: #fff;
   	line-height: 42px;
@@ -446,8 +448,6 @@ a {
 ul.join_box {
 	border: 1px solid #ddd;
 	background-color: #fff;
-	top: 300px;
-	position: absolute;
 }
 
 .checkBox, .checkBox>ul {
@@ -570,7 +570,7 @@ h2 {
 
 .logobox {
 	width: 1400px;
-	height: 300px;
+	height: 350px;
 	margin-bottom: 30px;
 }
 
@@ -586,13 +586,13 @@ h2 {
 
 .logo12box li:nth-child(1) {
 	width: 500px;
-	height: 500px;
+	height: 400px;
 	margin-top: 200px;
 }
 
 .logo12box li:nth-child(2) {
 	width: 500px;
-	height: 500px;
+	height: 400px;
 	margin-top: 200px;
 	margin-left: 36px;
 }
@@ -607,10 +607,11 @@ h2 {
 	height: 100%;
 }
 
+
 .mapbox {
-	width: 730px;
-	margin-left: 1140px;
-	margin-top: -495px;
+    width: 900px;
+    margin-left: 1140px;
+    margin-top: -395px;
 }
 
 .msubbox img {
