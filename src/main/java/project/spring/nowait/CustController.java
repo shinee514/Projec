@@ -67,6 +67,7 @@ private static final Logger logger = LoggerFactory.getLogger(CustController.clas
      session.setAttribute("nowait", null); 
      rttr.addFlashAttribute("msg", false);
      System.out.println("로그인 실패");
+     return "redirect:/login";
     } else {
      session.setAttribute("nowait", login);     
      System.out.println("로그인 성공");
@@ -74,7 +75,7 @@ private static final Logger logger = LoggerFactory.getLogger(CustController.clas
       
     return "redirect:/rev";
    }
-   
+
    /* 로그아웃 */
    @RequestMapping(value = "/logout", method = RequestMethod.GET)
    public String logout(HttpSession session) throws Exception{
@@ -84,9 +85,11 @@ private static final Logger logger = LoggerFactory.getLogger(CustController.clas
       
       return "redirect:/rev";
    }
+
    
    
    /* 회원정보 수정 */
+	
    @RequestMapping(value="/mypage", method = RequestMethod.GET)
    public String registerUpdateView() throws Exception{
       
@@ -102,34 +105,35 @@ private static final Logger logger = LoggerFactory.getLogger(CustController.clas
       
       return "redirect:/login";
    }
-   
-   /* 회원 탈퇴 */
-   @RequestMapping(value = "/withdrawal", method = RequestMethod.GET)
-   public void getWithdrawal() throws Exception {
-    logger.info("get withdrawal");
-    
-   }
-   
-   @RequestMapping(value = "/withdrawal", method = RequestMethod.POST)
-   public String postWithdrawal(HttpSession session, CustVO vo, RedirectAttributes rttr) throws Exception {
-    logger.info("post withdrawal");
-    
-    CustVO nowait = (CustVO)session.getAttribute("nowait");
-    
-    String oldPass = nowait.getCust_pw();
-    String newPass = vo.getCust_pw();
-        
-    if(!(oldPass.equals(newPass))) {
-     rttr.addFlashAttribute("msg", false);
-     return "redirect:/withdrawal";
-    }
-    
-    service.withdrawal(vo);
-    
-    session.invalidate();
-     
-    return "redirect:/login";
-   }
+
+	 
+
+	/* 회원 탈퇴 */
+	
+	@RequestMapping(value = "/withdrawal", method = RequestMethod.GET)
+	public ModelAndView withdrawal() {
+		return new ModelAndView("nowait/withdrawal");
+	}
+
+	  @RequestMapping(value = "/withdrawal", method = RequestMethod.POST) 
+	  public String postWithdrawal(HttpSession session, CustVO vo, RedirectAttributes rttr) throws Exception {
+		  logger.info("post withdrawal");
+	  
+	  CustVO nowait = (CustVO)session.getAttribute("nowait");
+	  
+	  String oldPass = nowait.getCust_pw(); 
+	  String newPass = vo.getCust_pw();
+	  
+	  if(!(oldPass.equals(newPass))) { 
+		  rttr.addFlashAttribute("msg", false); 
+		  return "redirect:/withdrawal"; }
+	  
+	  service.withdrawal(vo);
+	  
+	  session.invalidate();
+	  
+	  return "redirect:/login"; 
+	  }
    
    /* 카카오 로그인 */
    @RequestMapping("/kakao")

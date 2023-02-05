@@ -72,18 +72,10 @@
                      <div class="form-group text-center">
        				<button type="submit" class="btn btn-primary">로그인</button> 
        				</div>
-       				
-       				<div class="form-group text-center">
-       				<button class="btn btn-primary" id="login-kakao-btn" onclick="location.href='kakao'">
-       	 			카카오로 로그인하기
-					</button>
-  					</div>
+
+  					
 <c:if test="${msg == false}">
 	<p style="color:#f00;">로그인에 실패했습니다. 아이디 또는 패스워드를 다시 입력해주세요.</p>
-</c:if>
-
-<c:if test="${nowait != null }">
-	<p>${nowait.cust_name}님 환영합니다.</p>
 </c:if>
 
   </form>
