@@ -37,7 +37,8 @@
 <select id="select_name" parameterType="hashMap" resultType="hashMap">
     <![CDATA[
         select
-        res_name
+        res_name,
+        res_logo
         from
         res
         where

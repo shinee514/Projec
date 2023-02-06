@@ -5,9 +5,9 @@
 <insert id="insert" parameterType="hashMap" useGeneratedKeys="true" keyProperty="num_id">
     <![CDATA[
     insert into num
-    ( res_name, cust_name, cust_pn )
+    ( res_name, res_logo, cust_name, cust_pn )
     values
-    ( #{res_name}, #{cust_name}, #{cust_pn} )
+    ( #{res_name}, #{res_logo}, #{cust_name}, #{cust_pn} )
     ]]>
 </insert>
 
@@ -16,6 +16,7 @@
         select
         num_id,
         res_name,
+        res_logo,
         cust_name,
         cust_pn
         from
