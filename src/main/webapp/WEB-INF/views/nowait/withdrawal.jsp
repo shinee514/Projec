@@ -59,7 +59,7 @@
                 <form method="post" role="form" autocomplete="off">
                <div class="form-group">
                         <label for="id">아이디</label>
-                        <input type="text" class="form-control" id="cust_id" name="cust_id" placeholder="ID">
+                        <input type="text" class="form-control" id="cust_id" name="cust_id" value="${nowait.cust_id}" readonly>
                         <div class="eheck_font" id="id_check"></div>
                     </div>
                     
@@ -70,12 +70,10 @@
                     </div>
                     
                      <div class="form-group text-center">
-                   <button type="submit" class="btn btn-primary">회원탈퇴 확인</button> 
+                   <button type="submit" class="btn text-white" style="background-color: black;">회원탈퇴 확인</button> 
   </div>
-<c:if test="${msg == false }">
- <p>
- 입력한 비밀번호가 잘못되었습니다.
- </p>
+<c:if test="${msg == false}">
+	<p style="color:#f00;">패스워드를 다시 입력해주세요.</p>
 </c:if>
 
   </form>

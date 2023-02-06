@@ -70,7 +70,7 @@
                     </div>
                     
                      <div class="form-group text-center">
-       				<button type="submit" class="btn btn-primary">로그인</button> 
+       				<button type="submit" class="btn text-white" style="background-color: black;">로그인</button> 
        				</div>
 
   					

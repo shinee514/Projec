@@ -453,7 +453,7 @@ function execPostCode() {
 
 
   <div class="form-group text-center">
-       <button type="submit" class="btn btn-primary">회원가입</button> 
+       <button type="submit" class="btn text-white" style="background-color: black;">회원가입</button> 
   </div>
                 </form>
             </div>

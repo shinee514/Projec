@@ -6,139 +6,16 @@
 <head>
 <title>마이페이지</title>
 <meta charset="UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
 <!-- 부트스트랩 -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<link href="${path}/resources/css/style.css" rel="stylesheet"/>
-</head>
-<body id='mainbody'>
-<div id='mainwrap'>
-   <section id='mainsection'>
-	<div class="name">
-			<c:if test="${nowait != null }">
-    		<p style="font-size: 12px; font-family: sans-serif; margin-right: 10px; float: right;">
-    		${nowait.cust_name}님 환영합니다.
-    		</p>
-    		</c:if>
-   		</div>
-			<header>
-				<a href="/first"> <img src="${path}/resources/images/logo2.png"
-					alt="My Image" width="200" height="150">
-				</a>
-			</header>
-			<nav>
-				<ul class="nav-1">
-             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
-               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
-					<li class="nav-item1"><a href="/mypage">My Page</a></li>
-					<li class="nav-item1"><a href="/signup">Join</a></li>
-					<li class="nav-item1"><a href="/faq">FAQ</a></li>
-				</ul>
-			</nav>
-   <nav>
-      <ul class="nav-2">
-         <li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
-         <li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
-         <li class="nav-item2"> <a href="/sale">타임세일</a></li>
-      </ul>
-   </nav>
-   </section>
-   
-      <article class="container">
-            <div class="page-header">
-                <div class="col-6 text-center">
-                <h3>마이페이지</h3>
-                </div>
-                
-                <article class="container">
-            <div class="col-sm-6 col-md-offset-3">
-                <form action="/mypage" method="post" role="form" autocomplete="off">
-               <div class="form-group">
-                        <label for="id">아이디</label>
-                        <input type="text" class="form-control" id="cust_id" name="cust_id" value="${nowait.cust_id}" readonly>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="pw">비밀번호</label>
-                        <input type="password" class="form-control" name="cust_pw" placeholder="Password" value="">
-                        <div class="eheck_font" id="pw_check"></div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="pw2">비밀번호 확인</label>
-                        <input type="password" class="form-control" placeholder="Confirm Password" value="">
-                          <div class="eheck_font" id="pw2_check"></div>
-                    </div>
-                    
-                       <div class="form-group">
-                        <label for="cust_name">이름</label>
-                        <input type="text" class="form-control"  name="cust_name" value="${nowait.cust_name}" readonly>
-                    </div>
-                    
-                        <div class="form-group">
-                        <label for="cust_birth">생년월일</label>
-                        <input type="text" class="form-control" name="cust_birth" value="${nowait.cust_birth}" readonly>          
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="cust_email">이메일 주소</label>
-                        <input type="text" class="form-control" name="cust_email" value="${nowait.cust_email}">
-                    </div>
-                    
-             
-                    <div class="form-group">
-                        <label for="cust_pn">휴대폰 번호</label>
-                        <input type="text" class="form-control"name="cust_pn" value="${nowait.cust_pn}" readonly>
-                    </div>
-                    <div class="form-group">    
-               <label for="cust_pn">주소</label><br>           
-               <input class="form-control" style="width: 40%; display: inline;" placeholder="우편번호" name="cust_oaddr" type="text" readonly="readonly" value="${nowait.cust_oaddr}" >
-                      <button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
-               </div>
-
-               <div class="form-group">
-                <input class="form-control" style="top: 5px;" name="cust_addr" type="text" readonly="readonly" value="${nowait.cust_addr}"/>
-               </div>
-
-               <div class="form-group">
-                <input class="form-control" placeholder="상세주소" name="cust_detailaddr" type="text"  value="${nowait.cust_detailaddr}"/>
-               </div>
-               
-                <div class="form-group text-center">
-                   <button type="submit" class="btn btn-primary">회원정보 수정하기</button>
-                   </div>
-                   
-                   <div class="form-group text-center">
-                   <button type="button" class="btn btn-primary" onclick="location.href='withdrawal'">회원 탈퇴</button> 
-                   </div>
- </form>
-  
-  </div>
-  </article>
-  </div>
-  </article>
-   
-		<footer id="mainfooter">
-			<hr width="100%">
-
-			<a href="" target="_blank">이용약관</a> <a href="" target="_blank">개인정보
-				처리방침</a>
-			</nav>
-			<p></p>
-			<h3>
-				<span>nowait</span>
-			</h3>
-			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
-				nowait All rights reserved.</span>
-		</footer>
-   </div>
-</body>
+<!-- daum 도로명주소 찾기 api -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 
 <script type="text/javascript">
 
@@ -431,4 +308,128 @@ function execPostCode() {
  }
 
 </script>
+<link href="${path}/resources/css/style.css" rel="stylesheet"/>
+</head>
+<body id='mainbody'>
+<div id='mainwrap'>
+   <section id='mainsection'>
+	<div class="name">
+			<c:if test="${nowait != null }">
+    		<p style="font-size: 12px; font-family: sans-serif; margin-right: 10px; float: right;">
+    		${nowait.cust_name}님 환영합니다.
+    		</p>
+    		</c:if>
+   		</div>
+			<header>
+				<a href="/first"> <img src="${path}/resources/images/logo2.png"
+					alt="My Image" width="200" height="150">
+				</a>
+			</header>
+			<nav>
+				<ul class="nav-1">
+             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
+					<li class="nav-item1"><a href="/mypage" onClick="mypage_check();">My Page</a></li>
+					<li class="nav-item1"><a href="/signup">Join</a></li>
+					<li class="nav-item1"><a href="/faq">FAQ</a></li>
+				</ul>
+			</nav>
+   <nav>
+      <ul class="nav-2">
+         <li class="nav-item2"> <a href="/rev">원격 줄서기-예약</a></li>
+         <li class="nav-item2"> <a href="/recommend">주변맛집추천</a></li>
+         <li class="nav-item2"> <a href="/sale">타임세일</a></li>
+      </ul>
+   </nav>
+   </section>
+   
+      <article class="container">
+            <div class="page-header">
+                <div class="col-6 text-center">
+                <h3>마이페이지</h3>
+                </div>
+                
+                <article class="container">
+            <div class="col-sm-6 col-md-offset-3">
+                <form action="/mypage" method="post" role="form" autocomplete="off">
+               <div class="form-group">
+                        <label for="id">아이디</label>
+                        <input type="text" class="form-control" id="cust_id" name="cust_id" value="${nowait.cust_id}" readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pw">비밀번호</label>
+                        <input type="password" class="form-control" name="cust_pw" placeholder="Password" value="">
+                        <div class="eheck_font" id="pw_check"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pw2">비밀번호 확인</label>
+                        <input type="password" class="form-control" placeholder="Confirm Password" value="">
+                          <div class="eheck_font" id="pw2_check"></div>
+                    </div>
+                    
+                       <div class="form-group">
+                        <label for="cust_name">이름</label>
+                        <input type="text" class="form-control"  name="cust_name" value="${nowait.cust_name}" readonly>
+                    </div>
+                    
+                        <div class="form-group">
+                        <label for="cust_birth">생년월일</label>
+                        <input type="text" class="form-control" name="cust_birth" value="${nowait.cust_birth}" readonly>          
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cust_email">이메일 주소</label>
+                        <input type="text" class="form-control" name="cust_email" value="${nowait.cust_email}">
+                    </div>
+                    
+             
+                    <div class="form-group">
+                        <label for="cust_pn">휴대폰 번호</label>
+                        <input type="text" class="form-control"name="cust_pn" value="${nowait.cust_pn}" readonly>
+                    </div>
+                    <div class="form-group">    
+               <label for="cust_pn">주소</label><br>           
+               <input class="form-control" style="width: 40%; display: inline;" placeholder="우편번호" name="cust_oaddr" type="text" value="${nowait.cust_oaddr}" >
+                      <button type="button" class="btn btn-default" onclick="execPostCode();"><i class="fa fa-search"></i> 우편번호 찾기</button>                               
+               </div>
+
+               <div class="form-group">
+                <input class="form-control" style="top: 5px;" name="cust_addr" type="text" value="${nowait.cust_addr}"/>
+               </div>
+
+               <div class="form-group">
+                <input class="form-control" placeholder="상세주소" name="cust_detailaddr" type="text"  value="${nowait.cust_detailaddr}"/>
+               </div>
+               
+                <div class="form-group text-center">
+                   <button type="submit" class="btn text-white" style="background-color: black;">회원정보 수정하기</button>
+                   </div>
+                   
+                   <div class="form-group text-center">
+                   <button type="button" class="btn text-white" style="background-color: black;" onclick="location.href='withdrawal'">회원 탈퇴</button> 
+                   </div>
+ </form>
+  
+  </div>
+  </article>
+  </div>
+  </article>
+   
+		<footer id="mainfooter">
+			<hr width="100%">
+
+			<a href="" target="_blank">이용약관</a> <a href="" target="_blank">개인정보
+				처리방침</a>
+			</nav>
+			<p></p>
+			<h3>
+				<span>nowait</span>
+			</h3>
+			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
+				nowait All rights reserved.</span>
+		</footer>
+   </div>
+</body>
 </html>
