@@ -279,20 +279,24 @@ footer nav{
 }
 #detailinput {
     position: absolute;
-    left: 200px;
-    top: 1400px;
+    font-size:25px;
+    left: 309px;
+    top: 1420px;
     background: #606060;
     color: #fff;
     line-height: 42px;
     padding: 0;
     border: none;
-    width: 400px;
+    width: 600px;
+    height:60px;
 }
 #detailinput2{
-	width:400px;
+	width:600px;
+	font-size:25px;
+	height:60px;
 	position: absolute;
-    left: 1150px;
-    top: 1400px;
+    left: 972px;
+    top: 1420px;
     background: #606060;
   	color: #fff;
   	line-height: 42px;
@@ -430,6 +434,19 @@ ul>li {
 	list-style: none
 }
 
+.rvservcice{
+	margin-top:10px;
+}
+.rvservcice1{
+margin-top:10px;
+font-size:25px;
+	
+}
+
+.checkAllBtn{
+font-size:10px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -439,10 +456,21 @@ a {
 	display: block;
 	clear: both;
 }
-
 #joinForm {
-	width: 50%;
-	margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 500px;
+    font-size: 30px;
+	margin-top:100px;
+}
+
+
+#joinForm1 {
+    width: 50%;
+    margin: 0 auto;
+    margin-left: 650px;
+    font-size: 30px;
+	margin-top:100px;
 }
 
 ul.join_box {
@@ -495,7 +523,7 @@ ul.join_box {
 	display: block;
 	width:120%;
 	height: 150%;
-	font-size: 20px;
+	font-size: 25px;
 	text-align: center;
 	line-height: 20px;
 	
@@ -569,8 +597,9 @@ h2 {
 }
 
 .logobox {
-	width: 1400px;
+	width: 600px;
 	height: 350px;
+	margin-left: 60px;
 	margin-bottom: 30px;
 }
 
@@ -581,20 +610,21 @@ h2 {
 
 .logo12box {
 	display: flex;
-	margin-left: 30px;
+	margin-left: 0 auto;
 }
 
 .logo12box li:nth-child(1) {
-	width: 500px;
-	height: 400px;
-	margin-top: 200px;
+    width: 600px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 310px;
 }
 
 .logo12box li:nth-child(2) {
-	width: 500px;
-	height: 400px;
-	margin-top: 200px;
-	margin-left: 36px;
+    width: 600px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 60px;
 }
 
 .logo12box li:nth-child(1) img {
@@ -609,9 +639,9 @@ h2 {
 
 
 .mapbox {
-    width: 900px;
-    margin-left: 1140px;
-    margin-top: -395px;
+    width: 930px;
+    margin-left: 970px;
+    margin-top: -950px;
 }
 
 .msubbox img {
@@ -620,6 +650,13 @@ h2 {
 }
 
 
+
+.clearfix {
+
+	font-size:15px;
+}
+
+	
 //QnA게시판
 #boardcss_list_add_button_table { 
 	width: 100%; margin: 0 auto 15px;

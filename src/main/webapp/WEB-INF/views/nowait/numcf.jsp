@@ -26,8 +26,8 @@
 			</header>
 			<nav>
 				<ul class="nav-1">
-             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
-               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
+             	  	<li class="nav-item1"><c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"><c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>
@@ -40,18 +40,22 @@
 					<li class="nav-item2"><a href="/sale">타임세일</a></li>
 				</ul>
 			</nav>
-			
-			<h2>줄서기 완료</h2>
-	<h1>번호표 : ${ numData.num_id } </h1><br>
-	예약자 성함 : ${ numData.cust_name }<br>
-	예약 식당 : ${ numData.res_name }<br><br>
-	입장 30분전 해당 매장에서 연락할 예정입니다.<br><br>
-	
+		<div class="member_rvComplete">
+    	<div class="rvComplete">
+			<p class="desc"><h2>줄서기 완료</h2></p>
+			<div class="memberInfo"> 
+			<h1>번호표 : ${ numData.num_id } </h1><br>
+			>예약자 성함 : ${ numData.cust_name }<br>
+			>예약 식당 : ${ numData.res_name }<br><br>
+			<h3><center>입장 30분전 해당 매장에서 연락할 예정입니다.</center></h3><br><br>
+			</div>
+        <br/>
 	    <form method="POST" action="/numc">
    			<input type="hidden" name="numId" value="${numId}" />
    			<input type="submit" onClick="return check()" value="원격줄서기취소" />
   		</form>
-	
+	    </div>
+		</div>
 			
 		<footer id="mainfooter">
 			<hr width="100%">

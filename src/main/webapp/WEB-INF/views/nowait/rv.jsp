@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html id='mainhtml'>
 <head>
@@ -25,8 +24,7 @@
 			</header>
 			<nav>
 				<ul class="nav-1">
-             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
-               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
+					<li class="nav-item1"><a href="/login">Login</a></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>
@@ -46,19 +44,19 @@
 				<li class="checkBox check01">
 					<ul class="clearfix">
 						<h2>예약 신청서</h2>
-						<p class="rvservcice">
+						<p class="rvservcice1">
 							음식점명 : <input required value="${ data.res_name }" name="res_name" readonly style="width: 250px; height:30px; font-size:15px; border:none;">
 						</p>
 
-						<p class="rvservcice">
+						<p class="rvservcice1">
 							예약자 성함 : <input required value="${nowait.cust_name}" name="cust_name" readonly style="width: 120px; height:30px; font-size:15px; border:none;"	/>
 						</p>
-						<p class="rvservcice">
+						<p class="rvservcice1">
 							예약날짜 : <input required type="date" name="rv_date" style="width: 120px; height:30px; font-size:15px;"/>
 						</p>
-						<p class="rvservcice">
+						<p class="rvservcice1">
 							예약시간 : <input required type="time" name="rv_time" style="width: 120px; height:30px; font-size:15px;"/>
-						<p class="rvservcice">
+						<p class="rvservcice1">
 							예약 인원수 : <select name="rv_cnt" size="1" style="width: 60px; height:30px; font-size:15px;">
 								<option value="1명">1명</option>
 								<option value="2명">2명</option>
@@ -70,11 +68,12 @@
 							</select>
 						</p>
 
-
-						<li>이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 안내 메일 수신(선택)에 모두
-							동의합니다.</li>
+						<li class="checkAllBtn">
+						<li style="margin-top:20px; margin-left:10px;">이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 안내 메일 수신(선택)에 모두
+							동의합니다. </li>
+						
 						<li class="checkAllBtn"><input type="checkbox" name="rv_chk1" onchange="YnCheck(this);"
-							style="width: 40px; height:20px;" id="chk" class="chkAll"></li>
+							style="width: 40px; height:20px; margin-top:20px;" id="chk" class="chkAll"></li>
 					</ul>
 				</li>
 
@@ -108,7 +107,6 @@
 
 
 	</div>
-
 		<footer id='mainfooter'>
 			<hr width="100%">
 			<nav>
@@ -139,9 +137,6 @@ function check(){
 	if(joinForm.cust_name.value.length == 0){
 		alert("로그인 후 이용가능합니다.");
 		return false;
-	}else{
-		alert("예약되었습니다.");
-		return true;
 	}
 	}
 </script>
