@@ -14,10 +14,10 @@ COLLATE='utf8mb4_general_ci'
 
 create table res(
    res_id INT PRIMARY KEY NOT NULL,
-    res_name VARCHAR(20) UNIQUE KEY,
+    res_name VARCHAR(20) UNIQUE KEY NOT NULL,
     res_kind VARCHAR(10) NOT NULL,
     res_addr VARCHAR(50) NOT NULL,
-    res_logo VARCHAR(50) NOT NULL,
+    res_logo VARCHAR(50) UNIQUE KEY NOT NULL,
     res_logo1 VARCHAR(50) NOT NULL,
     res_logo2 VARCHAR(50) NOT NULL,
     res_map VARCHAR(50) NOT NULL,
@@ -53,8 +53,10 @@ COLLATE='utf8mb4_general_ci'
 create table num(
 	num_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     res_name VARCHAR(20) NOT NULL,
+    res_logo VARCHAR(50) NOT NULL,
     cust_name VARCHAR(20) NOT NULL,
     cust_pn VARCHAR(20) NOT NULL,
+    FOREIGN KEY (res_logo) REFERENCES res (res_logo),
     FOREIGN KEY (res_name) REFERENCES res (res_name),
     FOREIGN KEY (cust_name) REFERENCES cust (cust_name),
     FOREIGN KEY (cust_pn) REFERENCES cust (cust_pn)

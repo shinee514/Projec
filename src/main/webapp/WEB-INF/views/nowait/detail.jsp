@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
@@ -25,7 +26,8 @@
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="/login">Login</a></li>
+             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>
@@ -45,6 +47,7 @@
 				<a href="/detail?resId=${ data.res_id }">INFORMATION</a>
 				<a href="/detailmenu?resId=${ data.res_id }">MENU</a>
 			</ul>
+			<h2>${ data.res_name }</h2>
 			<ul class="logobox">
 				<img class="logo" src="${path}/resources/images/${ data.res_logo }">
 			</ul>

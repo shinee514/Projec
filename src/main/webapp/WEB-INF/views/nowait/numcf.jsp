@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html id="mainhtml">
 <head>
@@ -25,7 +26,8 @@
 			</header>
 			<nav>
 				<ul class="nav-1">
-					<li class="nav-item1"><a href="/login">Login</a></li>
+             	  	<li class="nav-item1"> <c:if test="${nowait != null}"><a href="/logout">Logout</a></c:if></li>
+               		<li class="nav-item1"> <c:if test="${nowait == null}"><a href="/login">Login</a></c:if></li>
 					<li class="nav-item1"><a href="/mypage">My Page</a></li>
 					<li class="nav-item1"><a href="/signup">Join</a></li>
 					<li class="nav-item1"><a href="/faq">FAQ</a></li>
@@ -42,7 +44,6 @@
 			<h2>줄서기 완료</h2>
 
 			
-
 
 			<ul class="numbox">
 				<li class="numsubbox"><img class="numcfimg"
@@ -63,8 +64,8 @@
 				<br> 입장 30분전 해당 매장에서 연락할 예정입니다.<br>	
 				</li>
 
-
 				<form method="POST" action="/numc">
+					<input type="hidden" name="numId" value="${numId}" />
 					<input type="submit" onClick="return check()" value="원격줄서기취소"
 						style="width: 200px; height: 30px; margin-left: 1095px;">
 

@@ -459,17 +459,19 @@ function execPostCode() {
             </div>
         </article>
 	
-	<footer id="mainfooter">
-		<hr width="100%">
-		<nav>
-			<a href="" target="_blank">이용약관</a>
-			<a href="" target="_blank">개인정보 처리방침</a>
-		</nav>
-		<p></p>
-			<h3><span>nowait</span></h3><br/>
-			<span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br/>
-			<span>© nowait All rights reserved.</span>
-	</footer>
+		<footer id="mainfooter">
+			<hr width="100%">
+
+			<a href="" target="_blank">이용약관</a> <a href="" target="_blank">개인정보
+				처리방침</a>
+			</nav>
+			<p></p>
+			<h3>
+				<span>nowait</span>
+			</h3>
+			<br /> <span>경기도 하남시 미사강변동로 85 힐스테이트에코미사, 3층 nowait</span><br /> <span>©
+				nowait All rights reserved.</span>
+		</footer>
 	</div>
 </body>
 </html>
