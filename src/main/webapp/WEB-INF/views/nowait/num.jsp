@@ -40,7 +40,7 @@
 			</nav>
 
 			<form action="" id="joinForm1" method="POST">
-
+					<input type="hidden" value="${ data.res_logo }" name="res_logo">
 				<p class="rvservcice1">
 					음식점명 : <input required value="${ data.res_name }" name="res_name"
 						readonly
@@ -59,7 +59,11 @@
 						readonly
 						style="width: 250px; margin-top: 10px; height: 30px; font-size: 25px; border: none;">
 				</p>
-					<input type="hidden" value="${ data.res_logo }" name="res_logo">
+
+	
+
+   			
+
 				
 
 				

@@ -590,7 +590,7 @@ h2 {
 }
 
 .logo {
-	margin-top: 30px;
+	margin-top: 100px;
 	width: 10%;
 	height: 100px;
 	margin-left: 250px;
@@ -641,7 +641,7 @@ h2 {
 .mapbox {
     width: 930px;
     margin-left: 970px;
-    margin-top: -950px;
+    margin-top: -880px;
 }
 
 .msubbox img {
@@ -656,7 +656,38 @@ h2 {
 	font-size:15px;
 }
 
+
+.numcftext1{
+	list-style:none;
+margin-left: 650px;
+    margin-top: 20px;
+    
+  
+}
+
+.numcftext2{
+	list-style:none;
+margin-left: 650px;
+    margin-top: 20px;
+    
+  
+}
+
+.numcftext3{
+	font-size: 20px;
+    list-style: none;
+    margin-left: 650px;
+    margin-top: 20px;
+    color: blue;
+  
+}
+  
 	
+.numcfimg{
+	width: 650px;
+    margin-left: 650px;
+    margin-top: 25px;
+}
 //QnA게시판
 #boardcss_list_add_button_table { 
 	width: 100%; margin: 0 auto 15px;
