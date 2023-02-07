@@ -44,8 +44,10 @@ create table rv(
     rv_chk1 VARCHAR(10),
     rv_chk2 VARCHAR(10) NOT NULL,
     rv_chk3 VARCHAR(10),
-    FOREIGN KEY (res_name) REFERENCES res (res_name),
+    FOREIGN KEY (res_name) REFERENCES res (res_name) 
+    ON DELETE CASCADE,
     FOREIGN KEY (cust_name) REFERENCES cust (cust_name)
+    ON DELETE CASCADE
 )
 COLLATE='utf8mb4_general_ci'
 ;
@@ -56,10 +58,14 @@ create table num(
     res_logo VARCHAR(50) NOT NULL,
     cust_name VARCHAR(20) NOT NULL,
     cust_pn VARCHAR(20) NOT NULL,
-    FOREIGN KEY (res_logo) REFERENCES res (res_logo),
-    FOREIGN KEY (res_name) REFERENCES res (res_name),
-    FOREIGN KEY (cust_name) REFERENCES cust (cust_name),
+    FOREIGN KEY (res_logo) REFERENCES res (res_logo)
+    ON DELETE CASCADE,
+    FOREIGN KEY (res_name) REFERENCES res (res_name)
+    ON DELETE CASCADE,
+    FOREIGN KEY (cust_name) REFERENCES cust (cust_name)
+    ON DELETE CASCADE,
     FOREIGN KEY (cust_pn) REFERENCES cust (cust_pn)
+    ON DELETE CASCADE
 )
 COLLATE='utf8mb4_general_ci'
 ;
